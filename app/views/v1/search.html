@@ -1,0 +1,25 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-grird-row">
+  <div class="govuk-grid-column-two-thrids">
+    
+    <h1 class="govuk-heading-l">Health Care Professionals</h1>
+
+    <h2 class="govuk-heading-m">Find a Health Care Proessional</h2>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="search">
+          Enter the Health Care Professional's name
+        </label>
+        <input id="part2" name="part2" type="hidden" value="{{getData.part2}}">
+        <input class="govuk-input govuk-input--width-20" id="search" name="search" type="text" autocomplete="off" value="">
+        <button type="submit" class="govuk-button search">Search</button>
+      </div> <!-- govuk-form-group -->
+
+  </div> <!-- govuk-column-two-thirds -->
+  
+</div> <!-- govuk-gridrow -->
+{% endblock %}

@@ -8,11 +8,10 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         Future Health Assessments - quality tool
      
-      </h1>{{releaseVersion | log }}
       <p>
         A set of prototype designs for the Future Health Assessment quality review process
       </p>
@@ -21,24 +20,20 @@
         Designs for the Quality Tool
       </p>
 
-      <h2 class="govuk-heading-m">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+      <h2 class="govuk-heading-m">V.1</h2>
+      <p>
+        <a href="/v1/search" class="govuk-button" style="margin-bottom: 0">Open prototype</a>
+      </p>
+        
+      <h2 class="govuk-heading-m">Prototype designs for testing</h2>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
+        <li>Idientifying users</li>
+        <li>Initial Search</li>
       </ul>
-    </div>
-</div>
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+   
+    </div> <!-- govuk-grid-row-column-full -->
+</div> <!-- govuk-grid-row -->
 
 {% endblock %}
