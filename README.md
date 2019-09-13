@@ -1,2 +1,2 @@
 # fha-quality
-# quaity-tool
+# quality-tool
