@@ -45,15 +45,15 @@ $govuk-assets-path: '/govuk/assets/';
 
 // App styles go here
 
-.full-width-container {
-  // margin: 0 15px;
-  // @include govuk-media-query($from: tablet) {
-  //   margin: 0 30px;
-  // }
+
+body {
+  overflow-x: hidden;
 }
 
 .container-inner {
   padding: 0 15px;
+  width: 100%;
+  box-sizing:border-box;
   @include govuk-media-query($from: tablet) {
     padding: 0 30px;
   }
@@ -68,3 +68,16 @@ $govuk-assets-path: '/govuk/assets/';
     padding-left: 0;
   }
 }
+
+@include govuk-media-query($from: tablet) {
+  .d-table-cell {
+    display: table-cell;
+    vertical-align: top;
+    float: none;
+    padding-bottom: 40px;
+  }
+}
+
+
+
+

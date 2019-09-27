@@ -79,15 +79,15 @@
       </header>
     {% endblock %}
 
-    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+    <main class="govuk-main-wrapper--auto-spacing" id="main-content" role="main">
       {% block main %}
         <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-quarter grey-bg">
+          <div class="govuk-grid-column-one-quarter grey-bg d-table-cell">
             <div class="container-inner">
               {% block leftPanel %}Sidebar{% endblock %}
             </div>
           </div>
-          <div class="govuk-grid-column-three-quarters right-panel">
+          <div class="govuk-grid-column-three-quarters right-panel d-table-cell">
             <div class="container-inner">
               {% block content %}Main content{% endblock %}
             </div>

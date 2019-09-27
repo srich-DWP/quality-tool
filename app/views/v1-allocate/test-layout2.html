@@ -1,4 +1,4 @@
-{% extends "layout-staff-full-sidebar.html" %}
+{% extends "layout-staff-full.html" %}
 
 {% block pageTitle %}
   {{ serviceName }}
@@ -8,16 +8,33 @@
   {{ serviceName }}
 {% endblock %}
 
-{% block leftPanel %}
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{% block beforeContent %}
+  <nav class="hmcts-sub-navigation" aria-label="Sub navigation">
+    <ul class="hmcts-sub-navigation__list">
+      <li class="hmcts-sub-navigation__item">
+        <a class="hmcts-sub-navigation__link" aria-current="page" href="#1">
+          Nav item 1
+        </a>
+      </li>
+      <li class="hmcts-sub-navigation__item">
+        <a class="hmcts-sub-navigation__link" href="#2">
+          Nav item 2
+        </a>
+      </li>
+      <li class="hmcts-sub-navigation__item">
+        <a class="hmcts-sub-navigation__link" href="#3">
+          Nav item 3
+        </a>
+      </li>
+    </ul>
+  </nav> 
 {% endblock %}
 
 {% block content %}
+
+  <div class="govuk-inset-text alert-success">
+    <p>Some text</p>
+  </div>
 
   <h1 class="govuk-heading-xl">Homer Simpson</h1>
 
