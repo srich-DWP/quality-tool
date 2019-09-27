@@ -1,6 +1,20 @@
-const express = require('express')
-const router = express.Router()
+module.exports = {
 
-// Add your routes here - above the module.exports line
+  bind: function (app) {
 
-module.exports = router
+    app.get('/', function (req, res) {
+      res.render('index');
+    });
+
+    app.get('/examples/template-data', function (req, res) {
+      res.render('examples/template-data', { 'name' : 'Foo' });
+    });
+
+    // Includes
+
+    // Version 1
+    require('./routes/v1.js')(app);
+
+
+  }
+}

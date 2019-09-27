@@ -1,6 +1,9 @@
 // global styles for <a> and <p> tags
 $govuk-global-styles: true;
 
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
 
@@ -13,3 +16,55 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// // App specific
+@import 'app/general';
+
+// DWP components
+@import 'dwp/dwp-alerts';
+@import 'dwp/dwp-header';
+@import 'dwp/dwp-timeline';
+@import 'dwp/dwp-key-details-bar';
+@import 'dwp/dwp-search-box';
+@import 'dwp/dwp-secondary-navigation';
+@import 'dwp/dwp-tags';
+
+// HMCTS components
+@import 'hmcts/hmcts-sub-navigation';
+
+// Patterns that aren't in Frontend
+@import 'patterns/task-list';
+@import 'patterns/related-items';
+
+// // Components that aren't in Frontend
+@import 'components/cookie-banner';
+@import 'components/info-box';
+@import 'components/misc';
+@import 'components/tile';
+@import 'components/border-box';
+
+// App styles go here
+
+.full-width-container {
+  // margin: 0 15px;
+  // @include govuk-media-query($from: tablet) {
+  //   margin: 0 30px;
+  // }
+}
+
+.container-inner {
+  padding: 0 15px;
+  @include govuk-media-query($from: tablet) {
+    padding: 0 30px;
+  }
+}
+
+.grey-bg {
+  background-color: #DEE0E2;
+}
+
+.right-panel {
+  @include govuk-media-query($from: tablet) {
+    padding-left: 0;
+  }
+}

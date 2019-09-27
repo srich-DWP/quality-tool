@@ -1,48 +1,45 @@
-
-{% extends "layout.html" %}
+{% extends "layout_master.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  {{ serviceName }}
 {% endblock %}
 
 {% block content %}
 
+<div class="govuk-!-margin-top-8">
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-      <h1 class="govuk-heading-xl">
-        Future Health Assessments - Assessment audit reviews
-     
-      <p>
-        A set of prototype designs for the Future Health Assessment quality review process
-      </p>
+    <div class="govuk-grid-column-two-thirds">
 
-      <p>
-        Designs for the Assessment audit reviews service
-      </p>
+      <h1 class="govuk-heading-xl">
+      Future Health Assessments - Assessment audit reviews</h1>
+
+      <p>A set of prototype designs for the Future Health Assessment quality review process.</p>
+
+      <p>Designs for the Assessment audit reviews service</p>
 
       <h2 class="govuk-heading-m">Allocation V.1</h2>
-      <p>Initial designs for allocating work to auditors</p>
-      <p>Examples of 'pull' and 'push' allocation methods</p>
-      <p>
-        <a href="/v1-allocate/allocate-index" class="govuk-link">View prototypes</a>
-      </p>
 
-      <br />
+      <p>Initial designs for allocating work to auditors</p>
+
+      <p>Examples of 'pull' and 'push' allocation methods</p>
+
+      <p><a href="/v1-allocate/allocate-index" class="govuk-link">View prototypes</a></p>
 
       <h2 class="govuk-heading-m">Audit V.1</h2>
-      <p>
-        <a href="/v1/audit-list" class="govuk-lin">View prototypes</a>
-      </p>
-        
+
+      <p><a href="/v1/audit-list" class="govuk-lin">View prototypes</a></p>
+
       <h2 class="govuk-heading-m">Prototype designs for testing</h2>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>Idientifying users</li>
         <li>Initial Search</li>
       </ul>
+
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-   
-    </div> <!-- govuk-grid-row-column-full -->
-</div> <!-- govuk-grid-row -->
+
+    </div>
+  </div>
+</div>
 
 {% endblock %}
