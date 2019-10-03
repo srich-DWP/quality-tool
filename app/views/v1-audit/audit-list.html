@@ -1,14 +1,113 @@
 
-{% extends "layout.html" %}
+{% extends "layout-staff-full.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block serviceName %}
+  {{ serviceName }}
+{% endblock %}
 
 {% block content %}
 
-<div class="govuk-grird-row">
-  <div class="govuk-grid-column-two-thrids">
-    
-    
+  <h1 class="govuk-heading-xl">Homer Simpson</h1>
 
-  </div> <!-- govuk-column-two-thirds -->
-  
-</div> <!-- govuk-gridrow -->
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+  <h2 class="govuk-heading-m">Ready for audit</h2>
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Practitioner</th>
+          <th scope="col" class="govuk-table__header">Assessment date</th>
+          <th scope="col" class="govuk-table__header">Claimant reference</th>
+          <th scope="col" class="govuk-table__header">Audit type</th>
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+         <td class="govuk-table__cell">Barney Rubble</td>
+         <td class="govuk-table__cell">9 September 2019</td>
+         <td class="govuk-table__cell">AA 12 34 56 A</td>
+         <td class="govuk-table__cell">100%</td>
+         <td class="govuk-table__cell"><a href="audit-barney-rubble-1" class="govuk-link">View</a></td>
+       </tr>
+       <tr class="govuk-table__row">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Wilma Flintstone</td>
+          <td class="govuk-table__cell">9 September 2019</td>
+          <td class="govuk-table__cell">WW 98 76 54 W</td>
+          <td class="govuk-table__cell">50%</td>
+          <td class="govuk-table__cell"><a href="audit-wilma-flintstone-1" class="govuk-link">View</a></td>
+        </tr>
+      </tr>
+      <tr class="govuk-table__row">
+       <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Barney Rubble</td>
+        <td class="govuk-table__cell">10 September 2019</td>
+        <td class="govuk-table__cell">JJ 67 54 12 J</td>
+        <td class="govuk-table__cell">100%</td>
+        <td class="govuk-table__cell"><a href="audit-barney-rubble-2" class="govuk-link">View</a></td>
+      </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Betty Rubble</td>
+      <td class="govuk-table__cell">10 September 2019</td>
+      <td class="govuk-table__cell">LL 78 56 34 L</td>
+      <td class="govuk-table__cell">10%</td>
+      <td class="govuk-table__cell"><a href="audit-betty-rubble-1" class="govuk-link">View</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Pebbles Flintstone</td>
+      <td class="govuk-table__cell">10 September 2019</td>
+      <td class="govuk-table__cell">TT 99 88 77 T</td>
+      <td class="govuk-table__cell">50%</td>
+      <td class="govuk-table__cell"><a href="audit-pebbles-flintstone-1" class="govuk-link">View</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Barney Rubble</td>
+      <td class="govuk-table__cell">10 September 2019</td>
+      <td class="govuk-table__cell">UU 98 12 56 U</td>
+      <td class="govuk-table__cell">100%</td>
+      <td class="govuk-table__cell"><a href="audit-barney-rubble-3" class="govuk-link">View</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Wilma Flintstone</td>
+      <td class="govuk-table__cell">10 September 2019</td>
+      <td class="govuk-table__cell">KK 44 56 77 K</td>
+      <td class="govuk-table__cell">50%</td>
+      <td class="govuk-table__cell"><a href="audit-wilma-flintstone-2" class="govuk-link">View</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Sam Slagheap</td>
+      <td class="govuk-table__cell">10 September 2019</td>
+      <td class="govuk-table__cell">QQ 98 76 54 Q</td>
+      <td class="govuk-table__cell">30%</td>
+      <td class="govuk-table__cell"><a href="audit-sam-slagheap-1" class="govuk-link">View</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Barney Rubble</td>
+      <td class="govuk-table__cell">11 September 2019</td>
+      <td class="govuk-table__cell">PP 24 35 57 P</td>
+      <td class="govuk-table__cell">100%</td>
+      <td class="govuk-table__cell"><a href="audit-barney-rubble-4" class="govuk-link">View</a></td>
+    </tr>
+    </tr>
+    </tbody>
+  </table>
+
 {% endblock %}
