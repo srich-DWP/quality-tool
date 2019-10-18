@@ -45,7 +45,6 @@ $govuk-assets-path: '/govuk/assets/';
 
 // App styles go here
 
-
 body {
   overflow-x: hidden;
 }
@@ -78,6 +77,123 @@ body {
   }
 }
 
+.bold-hr {
+  border: 0;
+  border-bottom: 2px solid govuk-colour("black");
+  padding: 20px 0;
+  @include govuk-responsive-margin(7, "bottom");
+}
 
+.report-view-table {
+  caption {
+    background-color: govuk-colour("light-grey");
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  tr th,
+  tr td,
+  caption {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
+.heading-inverted {
+  color: govuk-colour("white");
+  background-color: govuk-colour("black");
+  padding: 10px;
+  font-size: 18px;
+  line-height: 20px;
+  @include govuk-media-query($from: tablet) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 
+// Key details
+
+.key-details {
+  padding-top: 10px;
+  dl {
+    margin: 0;
+    padding: 0;
+  }
+  dt {
+    margin: 0;
+    padding: 0;
+  }
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.key-details-heading-small {
+  color: govuk-colour("black");
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  @include govuk-media-query($from: tablet) {
+    font-size: 19px;
+    line-height: 25px;
+  }
+}
+
+.key-details-heading-large {
+  color: govuk-colour("black");
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 35px;
+  @include govuk-media-query($from: tablet) {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+
+.key-details-summary-list {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  padding-top: 4000px;
+  background-color: green;
+  @include govuk-media-query($from: tablet) {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  dd {
+    font-weight: bold;
+  }
+  .col1, 
+  .col2 {
+    padding-bottom: 15px;
+    @include govuk-media-query($from: tablet) {
+      padding-top: 42px;
+    }
+  }
+  .col1 {
+    width: 45%;
+    float: left;
+  }
+  .col2 {
+    width: 45%;
+    float: right;
+  }
+}
+
+.badge {
+  background-color: govuk-colour("blue");
+  clear: both;
+  color: govuk-colour("white");
+  font-weight: bold;
+  padding: 5px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header-identifiers {
+  clear: both;
+  padding: 10px;
+  background-color: govuk-colour("light-grey");
+}

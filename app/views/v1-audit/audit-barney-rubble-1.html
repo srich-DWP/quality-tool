@@ -14,106 +14,132 @@
 
 {% block content %}
 
-<h1 class="heading-large mb0">Work capability report</h1>
+<div class="staff__heading govuk-!-margin-bottom-9">
+  <div class="govuk-grid-row">
+    <section class="key-details" role="contentinfo" aria-label="Key details">
+      <div class="govuk-grid-column-one-half">
+        <h1 class="key-details-heading-small">Customer details</h1>
+        <dl>
+          <dt class="govuk-visually-hidden">Name:</dt>
+          <dd class="key-details-heading-large">Valarie Tucker</dd>
+          <dt class="govuk-visually-hidden">National Insurance number:</dt>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">QQ 39 18 21 C</dd>
+        </dl>
+      </div><!-- column -->
+      <div class="govuk-grid-column-one-half">
+        <dl class="key-details-summary-list">
+          <div class="col1">
+            <dt>Date of birth</dt>
+            <dd>5 August 1966</dd>
+          </div>
+          <div class="col2">
+            <dt>Benefit</dt>
+            <dd>Universal credit</dd>
+          </div>
+        </dl>
+        <div class="header-spread-right">
+          <div class="header-identifiers">
+            <div class="badge">Unacceptable claimant behaviour</div>
+          </div>
+        </div>
+      </div><!-- column -->
+    </section>
+  </div><!-- / govuk-grid-row -->
+</div><!-- / staff__heading -->
 
-<div class="review-wrapper full-report">
 
-  <div class="report-item">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-    <table class="report-view-table">
-      <caption class="heading-small">Assessment overview</caption>
+    <h1 class="govuk-heading-l">Work capability report</h1>
 
-      <tbody>
-        <tr>
-          <th>Date of assessment</th>
-          <td>2 days ago</td>
+    <table class="govuk-table report-view-table">
+      <caption class="govuk-table__caption">Assessment overview</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date of assessment</th>
+          <td class="govuk-table__cell">2 days ago</td>
         </tr>
-        <tr>
-          <th>Assessment centre</th>
-          <td>Fiveways, Birmingham</td>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment centre</th>
+          <td class="govuk-table__cell">Fiveways, Birmingham</td>
         </tr>
-        <tr>
-          <th>Assessor</th>
-          <td>Heather Harrison</td>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessor</th>
+          <td class="govuk-table__cell">Heather Harrison</td>
         </tr>
-        <tr>
-          <th>Assessment start</th>
-          <td>12.30</td>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment start</th>
+          <td class="govuk-table__cell">12.30</td>
         </tr>
-        <tr>
-          <th>Assessment finish</th>
-          <td>13.00</td>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment finish</th>
+          <td class="govuk-table__cell">13.00</td>
         </tr>
       </tbody>
     </table>
 
-  </div>
-  <!-- / report item -->
+    <hr class="bold-hr">
 
+    <h2 class="govuk-heading-l">Illnesses, disabilities and medication</h2>  
 
-  <div class="report-item">
-
-    <h2 class="heading-large">Illnesses, disabilities and medication</h2>  
-
-    <h2 class="heading-medium">Condition history</h2>
+    <h2 class="govuk-heading-m">Condition history</h2>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    <table class="report-view-table">
-      <caption class="heading-small">Illnesses and disabilities</caption>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Source</th>
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Illnesses and disabilities</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Name</th>
+          <th scope="row" class="govuk-table__header">Source</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Diabetes</td>
-          <td>Claimant</td>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Diabetes</td>
+          <td class="govuk-table__cell">Claimant</td>
         </tr>
-        <tr>
-          <td>Arthritis</td>
-          <td>Claimant</td>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Arthritis</td>
+          <td class="govuk-table__cell">Claimant</td>
         </tr>
-        <tr>
-          <td>Liver disease</td>
-          <td>Claimant</td>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Liver disease</td>
+          <td class="govuk-table__cell">Claimant</td>
         </tr>
-        <tr>
-          <td>Urine problems</td>
-          <td>Claimant</td>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Urine problems</td>
+          <td class="govuk-table__cell">Claimant</td>
         </tr>
       </tbody>
     </table>
 
-    <table class="report-view-table">
-      <caption class="heading-small">Medication and side effects</caption>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Dose</th>
-          <th>Side effects</th>
+    <table class="govuk-table report-view-table">
+      <caption class="govuk-table__caption">Medication and side effects</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Name</th>
+          <th scope="row" class="govuk-table__header">Dose</th>
+          <th scope="row" class="govuk-table__header">Side effects</th>
         </tr>
       </thead>
 
-      <tbody>
-        <tr>
-          <td>Ibuprofen</td>
-          <td>Twice daily</td>
-          <td>None</td>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Ibuprofen</td>
+          <td class="govuk-table__cell">Twice daily</td>
+          <td class="govuk-table__cell">None</td>
         </tr>
       </tbody>
     </table>
 
-  </div>
-  <!-- / report item -->
+    <hr class="bold-hr">
 
-  <div class="report-item">
 
-    <h2 class="heading-large">Descriptors:</h2>
+    <h2 class="govuk-heading-l">Descriptors:</h2>
 
-    <h3 class="heading-medium">Moving around and using steps without help</h3>
+    <h3 class="heading-inverted">Moving around and using steps without help</h3>
 
     <table class="report-view-table">
       <caption class="heading-small">Relevant statements</caption>
@@ -197,11 +223,9 @@
 
       </tbody>
     </table>
-  </div>
-  <!-- / report item -->
 
 
-  <div class="report-item">
+
     <h2 class="heading-large">Observed behaviour</h2> 
     <table class="report-view-table">
       <caption class="heading-small">Relevant statements</caption>
@@ -220,10 +244,7 @@
         </tr>
       </tbody>
     </table>
-  </div>
-  <!-- / report item -->
 
-  <div class="report-item">
     <h2 class="heading-large">Exceptional circumstances</h2> 
     <div class="inner-focus">
       <h4 class="heading-small">Circumstances why {{customer.name.first}} should be treated as LCW and LCWRA:</h4>
@@ -231,11 +252,8 @@
       <h4 class="heading-small">Circumstances why {{customer.name.first}} should be treated as LCW:</h4>
       <p>None</p>
     </div>
-  </div>
-  <!-- / report item -->
 
 
-  <div class="report-item">
     <h2 class="heading-large">Prognosis</h2> 
     <div class="inner-focus">
       <h4 class="heading-small">Time until {{customer.name.first}}'s case needs reviewing:</h4>
@@ -243,10 +261,9 @@
       <h4 class="heading-small">Reason:</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-  </div>
-  <!-- / report item -->
 
-  <div class="report-item"> 
+
+
     <h2 class="heading-large">Physical assessments</h2>    
     <p>Consent was given by {{customer.name.first}} to start the physical assessment.</p>
     <h3 class="heading-medium">General health</h3>
@@ -543,10 +560,7 @@
 </tbody>
 </table>
 
-</div>
-<!-- / item end -->
-
-</div>
-<!-- / wrapper -->
+</div>{# /govuk-grid-column #}
+</div>{# /govuk-grid-row #}
 
 {% endblock %}
