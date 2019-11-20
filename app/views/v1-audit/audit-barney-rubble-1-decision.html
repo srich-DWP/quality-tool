@@ -10,12 +10,11 @@
 
 {% block leftPanel %}
 
-<div>
-  <a href="audit-list" class="govuk-back-link">Back to dashboard</a> 
-  <form id="form" method="post" action="audit-barney-rubble-1-locked">
-    <input type="submit" class="govuk-button" value="Start audit" id="submit"><!-- backdate -->
-  </form>  
-</div>
+
+  <div>
+    <a href="audit-bareny-rubble-1-locked" class="govuk-back-link">Back</a>
+  </div>  
+
 {% endblock %}
 
 {% block content %}
@@ -85,11 +84,46 @@
           <td class="govuk-table__cell">13.00</td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        Please make sure you have completed the IQA form with the audit grade and any feedback
+      </strong>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Can this assessment be relased to DWP?
+          </h1>
+        </legend>
+        <span id="changed-name-hint" class="govuk-hint">
+          This includes changing your last name or spelling your name differently.
+        </span>
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
 
     <hr class="bold-hr">
 
-    <h2 class="govuk-heading-l">Illnesses, disabilities and medication</h2>  
+    <!-- <h2 class="govuk-heading-l">Illnesses, disabilities and medication</h2>  
 
     <h2 class="govuk-heading-m">Condition history</h2>
 
@@ -121,7 +155,7 @@
           <td class="govuk-table__cell">Claimant</td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
 
     <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
       <caption class="govuk-table__caption">Medication and side effects</caption>
@@ -543,9 +577,9 @@
       </td>
     </tr>
   </tbody>
-</table>
+</table> 
 
 </div>{# /govuk-grid-column #}
-</div>{# /govuk-grid-row #}
+</div>{# /govuk-grid-row #} -->
 
 {% endblock %}
