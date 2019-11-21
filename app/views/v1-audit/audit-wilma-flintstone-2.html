@@ -9,12 +9,15 @@
 {% endblock %}
 
 {% block leftPanel %}
-<p>Content and links to be placed here</p>
+  <div>
+    <a href="audit-list" class="govuk-back-link govuk-!-margin-top-6">Back to dashboard</a> 
+    <form id="form" method="post" action="audit-wilma-flintstone-2-locked">
+      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Start audit" id="submit"><!-- audit-wilme-flintstone-2-locked -->
+    </form>  
+  </div>
 {% endblock %}
 
 {% block content %}
-
-<a href="audit-list" class="govuk-back-link">Back</a> 
 
 <div class="staff__heading govuk-!-margin-bottom-9">
   <div class="govuk-grid-row">
@@ -60,7 +63,7 @@
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Date of assessment</th>
-          <td class="govuk-table__cell">2 days ago</td>
+          <td class="govuk-table__cell">19 November 2019</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment centre</th>
@@ -99,12 +102,20 @@
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Anxiety</td>
+          <td class="govuk-table__cell">Diabetes</td>
           <td class="govuk-table__cell">Claimant</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Deperssion</td>
-          <td class="govuk-table__cell">GP</td>
+          <td class="govuk-table__cell">Arthritis</td>
+          <td class="govuk-table__cell">Claimant</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Liver disease</td>
+          <td class="govuk-table__cell">Claimant</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Urine problems</td>
+          <td class="govuk-table__cell">Claimant</td>
         </tr>
       </tbody>
     </table>
@@ -121,9 +132,9 @@
 
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Mirtazapine</td>
-          <td class="govuk-table__cell">Once daily</td>
-          <td class="govuk-table__cell">Weight increase</td>
+          <td class="govuk-table__cell">Ibuprofen</td>
+          <td class="govuk-table__cell">Twice daily</td>
+          <td class="govuk-table__cell">None</td>
         </tr>
       </tbody>
     </table>
@@ -138,13 +149,13 @@
       <caption class="govuk-table__caption">Relevant statements</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Joshua goes to the shop each morning, he goes alone.</td>
+          <td class="govuk-table__cell">Alan goes to the shop each morning, he goes alone.</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Lives in a residential home with no famliy around</td>
+          <td class="govuk-table__cell">Lives in a top floor flat without access to a lift.</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Finds it hard to be around other people</td>
+          <td class="govuk-table__cell">Walks up and down 4 flights of stairs when going outside.</td>
         </tr>
       </tbody>
     </table>

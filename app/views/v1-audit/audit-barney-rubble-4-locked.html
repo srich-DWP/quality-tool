@@ -9,12 +9,14 @@
 {% endblock %}
 
 {% block leftPanel %}
+  <form id="form" method="post" action="audit-barney-rubble-4-decision">
+    <div>
+      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Finish audit" id="submit"><!-- audit-barney-rubble-4-decision -->
+    </div>
+  </form>    
   <div>
-      <a href="audit-list" class="govuk-back-link govuk-!-margin-top-6">Back to dashboard</a> 
-      <form id="form" method="post" action="audit-sam-slagheap-1-locked">
-        <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Start audit" id="submit"><!-- audit-sam-slagheap-1-locked -->
-      </form>  
-  </div>
+    <a href="audit-list" class="govuk-link">Cancel audit</a>
+  </div>  
 {% endblock %}
 
 {% block content %}
@@ -26,56 +28,55 @@
         <h1 class="key-details-heading-small">Customer details</h1>
         <dl>
           <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Imelda Indigo</dd>
+          <dd class="key-details-heading-large">Boris Brown</dd>
           <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">QQ 98 76 54 Q</dd>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">PP 24 25 57 P</dd>
         </dl>
       </div><!-- column -->
       <div class="govuk-grid-column-one-half">
         <dl class="key-details-summary-list">
           <div class="col1">
             <dt>Date of birth</dt>
-            <dd>3 June 1987</dd>
+            <dd>20 October 1975</dd>
           </div>
           <div class="col2">
             <dt>Benefit</dt>
-            <dd>Universal credit</dd>
+            <dd>Employment support allowance</dd>
           </div>
         </dl>
-        <div class="header-spread-right">
-          <!--<div class="header-identifiers">
+       <div class="header-spread-right">
+          <div class="header-identifiers">
             <div class="badge">Unacceptable claimant behaviour</div>
           </div>
-        </div> -->
+        </div> 
       </div><!-- column -->
     </section>
   </div><!-- / govuk-grid-row -->
 </div><!-- / staff__heading -->
-
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
     <h1 class="govuk-heading-l">Work capability report</h1>
 
-    <table class="govuk-table report-view-table">
+     <table class="govuk-table report-view-table">
       <caption class="govuk-table__caption">Assessment overview</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Date of assessment</th>
-          <td class="govuk-table__cell">19 Novmebr 2019</td>
+          <td class="govuk-table__cell">19 November 2019</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment centre</th>
-          <td class="govuk-table__cell">Molineux House, Wolverhampton</td>
+          <td class="govuk-table__cell">Tresco House, London</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessor</th>
-          <td class="govuk-table__cell">Sam Slagheap</td>
+          <td class="govuk-table__cell">Barney Rubble</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment start</th>
-          <td class="govuk-table__cell">14.30</td>
+          <td class="govuk-table__cell">15.00</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment finish</th>

@@ -9,12 +9,15 @@
 {% endblock %}
 
 {% block leftPanel %}
-<p>Content and links to be placed here</p>
+  <div>
+    <a href="audit-list" class="govuk-back-link govuk-!-margin-top-6">Back to dashboard</a> 
+    <form id="form" method="post" action="audit-pebbles-flintstone-1-locked">
+      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Start audit" id="submit"><!-- audit-pebbles-flintstone-1-locked -->
+    </form>  
+  </div>
 {% endblock %}
 
 {% block content %}
-
-<a href="audit-list" class="govuk-back-link">Back</a> 
 
 <div class="staff__heading govuk-!-margin-bottom-9">
   <div class="govuk-grid-row">
@@ -60,7 +63,7 @@
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Date of assessment</th>
-          <td class="govuk-table__cell">2 days ago</td>
+          <td class="govuk-table__cell">19 November 2019</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment centre</th>

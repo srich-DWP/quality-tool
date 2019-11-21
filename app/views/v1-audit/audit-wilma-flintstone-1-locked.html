@@ -9,15 +9,20 @@
 {% endblock %}
 
 {% block leftPanel %}
+  <form id="form" method="post" action="audit-wilma-flintstone-1-decision">
+    <div>
+      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Finish audit" id="submit"><!-- backdate -->
+    </div>
+  </form>  
+    
   <div>
-      <a href="audit-list" class="govuk-back-link govuk-!-margin-top-6">Back to dashboard</a> 
-      <form id="form" method="post" action="audit-sam-slagheap-1-locked">
-        <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Start audit" id="submit"><!-- audit-sam-slagheap-1-locked -->
-      </form>  
-  </div>
+    <a href="audit-list" class="govuk-link">Cancel audit</a>
+  </div>  
 {% endblock %}
 
 {% block content %}
+
+<a href="audit-list" class="govuk-back-link">Back</a> 
 
 <div class="staff__heading govuk-!-margin-bottom-9">
   <div class="govuk-grid-row">
@@ -26,24 +31,24 @@
         <h1 class="key-details-heading-small">Customer details</h1>
         <dl>
           <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Imelda Indigo</dd>
+          <dd class="key-details-heading-large">John Red</dd>
           <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">QQ 98 76 54 Q</dd>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">WW 98 76 54 W</dd>
         </dl>
       </div><!-- column -->
       <div class="govuk-grid-column-one-half">
         <dl class="key-details-summary-list">
           <div class="col1">
             <dt>Date of birth</dt>
-            <dd>3 June 1987</dd>
+            <dd>22 June 1990</dd>
           </div>
           <div class="col2">
             <dt>Benefit</dt>
-            <dd>Universal credit</dd>
+            <dd>Employment support allowance</dd>
           </div>
         </dl>
-        <div class="header-spread-right">
-          <!--<div class="header-identifiers">
+       <!-- <div class="header-spread-right">
+          <div class="header-identifiers">
             <div class="badge">Unacceptable claimant behaviour</div>
           </div>
         </div> -->
@@ -63,23 +68,23 @@
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Date of assessment</th>
-          <td class="govuk-table__cell">19 Novmebr 2019</td>
+          <td class="govuk-table__cell">18 November 2019</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment centre</th>
-          <td class="govuk-table__cell">Molineux House, Wolverhampton</td>
+          <td class="govuk-table__cell">Tresco House, London</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessor</th>
-          <td class="govuk-table__cell">Sam Slagheap</td>
+          <td class="govuk-table__cell">Wilma Flintstone</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment start</th>
-          <td class="govuk-table__cell">14.30</td>
+          <td class="govuk-table__cell">09.30</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment finish</th>
-          <td class="govuk-table__cell">15.30</td>
+          <td class="govuk-table__cell">10.15</td>
         </tr>
       </tbody>
     </table>
@@ -102,12 +107,24 @@
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Anxiety</td>
+          <td class="govuk-table__cell">Heart problems</td>
+          <td class="govuk-table__cell">GP</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Liver problems</td>
+          <td class="govuk-table__cell">GP</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Deafness</td>
           <td class="govuk-table__cell">Claimant</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Deperssion</td>
-          <td class="govuk-table__cell">GP</td>
+          <td class="govuk-table__cell">Arthritis</td>
+          <td class="govuk-table__cell">Specialist</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Sight prblems</td>
+          <td class="govuk-table__cell">Claimant</td>
         </tr>
       </tbody>
     </table>
@@ -124,9 +141,24 @@
 
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Mirtazapine</td>
+          <td class="govuk-table__cell">Ibuprofen</td>
+          <td class="govuk-table__cell">Six times daily</td>
+          <td class="govuk-table__cell">None</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Heart tablets</td>
           <td class="govuk-table__cell">Once daily</td>
-          <td class="govuk-table__cell">Weight increase</td>
+          <td class="govuk-table__cell">Weight gain</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Liver tablets</td>
+          <td class="govuk-table__cell">Three times daily</td>
+          <td class="govuk-table__cell">Effects mood</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Liver tablest</td>
+          <td class="govuk-table__cell">Once daily</td>
+          <td class="govuk-table__cell">None</td>
         </tr>
       </tbody>
     </table>
@@ -141,13 +173,13 @@
       <caption class="govuk-table__caption">Relevant statements</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Joshua goes to the shop each morning, he goes alone.</td>
+          <td class="govuk-table__cell">Jon is confined to bed</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Lives in a residential home with no famliy around</td>
+          <td class="govuk-table__cell">Lives in sons house</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Finds it hard to be around other people</td>
+          <td class="govuk-table__cell">Can't go out on his own</td>
         </tr>
       </tbody>
     </table>
@@ -165,15 +197,15 @@
       <caption class="govuk-table__caption">Relevant statements</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Statement about Alan and his ability to sit.</td>
+          <td class="govuk-table__cell">Statement about Jon and his ability to sit.</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Statement about Alan and his ability to stand.</td>
+          <td class="govuk-table__cell">Statement about Jon and his ability to stand.</td>
         </tr>
       </tbody>
     </table>
 
-    <h4 class="govuk-heading-s">Can Alan move from one seat to another right next to it without help from another person</h4>
+    <h4 class="govuk-heading-s">Can Jon move from one seat to another right next to it without help from another person</h4>
     <p>No</p>
 
     <h4 class="govuk-heading-s">Justification:</h4>
@@ -209,16 +241,16 @@
       <caption class="govuk-table__caption">Relevant statements</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Walked from waiting are to assessment room with no visible signs of discomfort, approximately 20 metres</td>
+          <td class="govuk-table__cell">Mobilised in a wheelchair from waiting area to assessment room with visible signs of discomfort</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Completed the co-ordination examination with smooth movement</td>
+          <td class="govuk-table__cell">Couldn't complete the co-ordination examination</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Upper limb movements appeared fluid and pain free in the left side</td>
+          <td class="govuk-table__cell">Upper limb movements appeared rigid and was in pain</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Sat throughout the duration of the assessment and showed no sign of pain or discomfort</td>
+          <td class="govuk-table__cell">Sat in a wheelchair throughout the duration of the assessment and showed signs of pain and discomfort</td>
         </tr>
       </tbody>
     </table>
@@ -226,15 +258,15 @@
     <hr class="bold-hr">
 
     <h2 class="govuk-heading-l">Exceptional circumstances</h2> 
-    <h4 class="govuk-heading-s">Circumstances why Alan should be treated as LCW and LCWRA:</h4>
+    <h4 class="govuk-heading-s">Circumstances why Jon should be treated as LCW and LCWRA:</h4>
     <p>None</p>
-    <h4 class="govuk-heading-s">Circumstances why Alan should be treated as LCW:</h4>
+    <h4 class="govuk-heading-s">Circumstances why Jon should be treated as LCW:</h4>
     <p class="govuk-!-margin-bottom-6">None</p>
 
     <hr class="bold-hr"> 
 
     <h2 class="govuk-heading-l">Prognosis</h2> 
-    <h4 class="govuk-heading-s">Time until Alan's case needs reviewing:</h4>
+    <h4 class="govuk-heading-s">Time until Jon's case needs reviewing:</h4>
     <p>Within 2 years</p>
     <h4 class="govuk-heading-s">Reason:</h4>
     <p class="govuk-!-margin-bottom-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -242,7 +274,7 @@
     <hr class="bold-hr">
 
     <h2 class="govuk-heading-l">Physical assessments</h2>    
-    <p class="govuk-!-margin-bottom-6">Consent was given by Alan to start the physical assessment.</p>
+    <p class="govuk-!-margin-bottom-6">Consent was given by Jon to start the physical assessment.</p>
 
     <h3 class="heading-inverted">General health</h3>
 

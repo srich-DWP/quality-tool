@@ -9,48 +9,50 @@
 {% endblock %}
 
 {% block leftPanel %}
+  <form id="form" method="post" action="audit-wilma-flintstone-2-decision">
+    <div>
+      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Finish audit" id="submit"><!-- audit-wilma-flintstone-2-decision -->
+    </div>
+  </form>    
   <div>
-      <a href="audit-list" class="govuk-back-link govuk-!-margin-top-6">Back to dashboard</a> 
-      <form id="form" method="post" action="audit-sam-slagheap-1-locked">
-        <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Start audit" id="submit"><!-- audit-sam-slagheap-1-locked -->
-      </form>  
-  </div>
+    <a href="audit-list" class="govuk-link">Cancel audit</a>
+  </div>  
 {% endblock %}
 
 {% block content %}
 
-<div class="staff__heading govuk-!-margin-bottom-9">
-  <div class="govuk-grid-row">
-    <section class="key-details" role="contentinfo" aria-label="Key details">
-      <div class="govuk-grid-column-one-half">
-        <h1 class="key-details-heading-small">Customer details</h1>
-        <dl>
-          <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Imelda Indigo</dd>
-          <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">QQ 98 76 54 Q</dd>
-        </dl>
-      </div><!-- column -->
-      <div class="govuk-grid-column-one-half">
-        <dl class="key-details-summary-list">
-          <div class="col1">
-            <dt>Date of birth</dt>
-            <dd>3 June 1987</dd>
-          </div>
-          <div class="col2">
-            <dt>Benefit</dt>
-            <dd>Universal credit</dd>
-          </div>
-        </dl>
-        <div class="header-spread-right">
-          <!--<div class="header-identifiers">
-            <div class="badge">Unacceptable claimant behaviour</div>
-          </div>
-        </div> -->
-      </div><!-- column -->
-    </section>
-  </div><!-- / govuk-grid-row -->
-</div><!-- / staff__heading -->
+  <div class="staff__heading govuk-!-margin-bottom-9">
+    <div class="govuk-grid-row">
+      <section class="key-details" role="contentinfo" aria-label="Key details">
+        <div class="govuk-grid-column-one-half">
+          <h1 class="key-details-heading-small">Customer details</h1>
+          <dl>
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="key-details-heading-large">Elizabeth Green</dd>
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">KK 44 55 66 K</dd>
+          </dl>
+        </div><!-- column -->
+        <div class="govuk-grid-column-one-half">
+          <dl class="key-details-summary-list">
+            <div class="col1">
+              <dt>Date of birth</dt>
+              <dd>14 August 1995</dd>
+            </div>
+            <div class="col2">
+              <dt>Benefit</dt>
+              <dd>Universal credit</dd>
+            </div>
+          </dl>
+          <div class="header-spread-right">
+            <!--<div class="header-identifiers">
+              <div class="badge">Unacceptable claimant behaviour</div>
+            </div>
+          </div> -->
+        </div><!-- column -->
+      </section>
+    </div><!-- / govuk-grid-row -->
+  </div><!-- / staff__heading -->
 
 
 <div class="govuk-grid-row">
@@ -58,28 +60,28 @@
 
     <h1 class="govuk-heading-l">Work capability report</h1>
 
-    <table class="govuk-table report-view-table">
+     <table class="govuk-table report-view-table">
       <caption class="govuk-table__caption">Assessment overview</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Date of assessment</th>
-          <td class="govuk-table__cell">19 Novmebr 2019</td>
+          <td class="govuk-table__cell">19 November 2019</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment centre</th>
-          <td class="govuk-table__cell">Molineux House, Wolverhampton</td>
+          <td class="govuk-table__cell">Tresco House, London</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessor</th>
-          <td class="govuk-table__cell">Sam Slagheap</td>
+          <td class="govuk-table__cell">Wlima Flintstone</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment start</th>
-          <td class="govuk-table__cell">14.30</td>
+          <td class="govuk-table__cell">11.00</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment finish</th>
-          <td class="govuk-table__cell">15.30</td>
+          <td class="govuk-table__cell">12.00</td>
         </tr>
       </tbody>
     </table>
@@ -102,12 +104,20 @@
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Anxiety</td>
+          <td class="govuk-table__cell">Diabetes</td>
           <td class="govuk-table__cell">Claimant</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Deperssion</td>
-          <td class="govuk-table__cell">GP</td>
+          <td class="govuk-table__cell">Arthritis</td>
+          <td class="govuk-table__cell">Claimant</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Liver disease</td>
+          <td class="govuk-table__cell">Claimant</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Urine problems</td>
+          <td class="govuk-table__cell">Claimant</td>
         </tr>
       </tbody>
     </table>
@@ -124,9 +134,9 @@
 
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Mirtazapine</td>
-          <td class="govuk-table__cell">Once daily</td>
-          <td class="govuk-table__cell">Weight increase</td>
+          <td class="govuk-table__cell">Ibuprofen</td>
+          <td class="govuk-table__cell">Twice daily</td>
+          <td class="govuk-table__cell">None</td>
         </tr>
       </tbody>
     </table>
@@ -141,13 +151,13 @@
       <caption class="govuk-table__caption">Relevant statements</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Joshua goes to the shop each morning, he goes alone.</td>
+          <td class="govuk-table__cell">Alan goes to the shop each morning, he goes alone.</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Lives in a residential home with no famliy around</td>
+          <td class="govuk-table__cell">Lives in a top floor flat without access to a lift.</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Finds it hard to be around other people</td>
+          <td class="govuk-table__cell">Walks up and down 4 flights of stairs when going outside.</td>
         </tr>
       </tbody>
     </table>
