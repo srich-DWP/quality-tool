@@ -1,0 +1,87 @@
+{% extends "layout-staff-full-sidebar.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block serviceName %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block leftPanel %}
+  <p>Content and links to be placed here</p>
+{% endblock %}
+
+{% block content %}
+
+<a href="audit-list" class="govuk-back-link">Back</a> 
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+   
+    
+    <h1 class="govuk-heading-m">Customer details</h1>
+
+    <h2 class="govuk-heading-l">Imelda Indigo</h2>
+    <p class="govuk-caption-m">QQ 98 76 54 Q</p>
+
+  </div> <!-- coloumn-one-half -->
+  <div class="govuk-grid-column-one-half">
+
+    <h1 class="govuk-heading-m">Date of assessment</h1>
+    <h2 class="govuk-heading-l">10th September 2019</h2>
+    
+  </div> <!-- coloumn-one-half -->
+</div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<div class="govuk-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#past-day">
+        Details
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Report
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-month">
+        Evidence
+      </a>
+    </li>
+  </ul>
+  <section class="govuk-tabs__panel" id="past-day">
+    <h2 class="govuk-heading-l">Claimant details</h2>
+    <h3 class="govuk-table__heading-m">Addess:</h3>
+    <p>151 Road Place</p>
+    <p>The Croft</p>
+    <p>City</p>
+    <p>CT10 6FF</p>
+    <h3 class="govuk-table__heading-m">Phone:</h3>
+    <p>0111 2233445</p>
+    <h3 class="govuk-table__heading-m">Email:</h3>
+    <p>imelda.indigo@email.co.uk</p>
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l">Report</h2>
+    
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+    <h2 class="govuk-heading-l">Evidence</h2>
+    
+  </section>
+  
+</div>
+
+  
+
+{% endblock %}
