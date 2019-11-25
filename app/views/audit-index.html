@@ -1,0 +1,61 @@
+{% extends "layout_master.html" %}
+
+{% block pageTitle %}
+{{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-!-margin-bottom-5">
+  <a href="index" rel="prev" class="govuk-back-link">Back to main index</a>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Assessment report audit feature
+    </h1>
+    <h2 class="govuk-heading-m">Audit Alpha v2a</h2>
+    <h3 class="govuk-heading-m">Created 22 November 2019</h3>
+    <p>Design options for allocating audit work and audit flow based on feedback from UR v1 at Tresco House</p>
+    <p>Flow based on the 'jacket' driving the work</p>
+    <p>Admin distribute the work based and Auditors selct the case to audit based on 'jackets' they have bewen given</p>
+    <p>Link on Index screen has changed to 'Start audit'</p>
+    <p>When audit is being worked on the link is not visible</p>
+    <p></p>
+    <p>
+
+      <a href="/v2a-audit/audit-list" class="govuk-button" style="margin-bottom: 0">Open prototype</a>
+      
+    </p>
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    <h2 class="govuk-heading-m">Audit Alpha v2b</h2>
+    <h3 class="govuk-heading-m">Created 22 November 2019</h3>
+    <p>Design options for allocating audit work and audit flow based on feedback from UR v1 at Tresco House</p>
+    <p>Flow based on the HTDS system driving the work</p>
+    <p>Auditor selects a reoprt from the active list, then retrieves the 'jacket' from admin</p>
+    <p>Link on the index screen is 'view report', enabling the auditor to lock the case before starting to work on it</p>
+    <p>Once a case has been locked the link to 'view report' is hidden</p>
+    <p></p>
+
+    <p>
+      <a href="/v2b-audit/audit-list" class="govuk-button" style="margin-bottom: 0">Open prototype</a>
+    </p>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Audit Alpha v1</h2>
+    <h3 class="govuk-heading-m">Created 27 September 2019</h3>
+    <p>Initial designs showing audit of a the assessment report</p>
+    <p>Completed assessment report list and showing the full completed reoprt in HTDS format</p>
+
+    <p>
+      <a href="/v1-audit/audit-list" class="govuk-button" style="margin-bottom: 0">Open prototype</a>
+    </p>
+
+  </div> <!-- govuk-grid-row-column-full -->
+</div> <!-- govuk-grid-row -->
+
+{% endblock %}
