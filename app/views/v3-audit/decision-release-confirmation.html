@@ -9,88 +9,34 @@
 {% endblock %}
 
 {% block leftPanel %}
-<a href="audit-betty-rubble-1-locked" class="govuk-back-link">Back</a>
+<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
 <form id="form" method="post" action="audit-list-updated">
 
-<div class="staff__heading govuk-!-margin-bottom-9">
-  <div class="govuk-grid-row">
-    <section class="key-details" role="contentinfo" aria-label="Key details">
-      <div class="govuk-grid-column-one-half">
-        <h1 class="key-details-heading-small">Customer details</h1>
-        <dl>
-          <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Cindy Purple</dd>
-          <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">LL 78 56 24 L</dd>
-        </dl>
-      </div><!-- column -->
-      <div class="govuk-grid-column-one-half">
-        <dl class="key-details-summary-list">
-          <div class="col1">
-            <dt>Date of birth</dt>
-            <dd>3 January 1965</dd>
-          </div>
-          <div class="col2">
-            <dt>Benefit</dt>
-            <dd>Employment support allowance</dd>
-          </div>
-        </dl>
-        <div class="header-spread-right">
-          <!--<div class="header-identifiers">
-            <div class="badge">Unacceptable claimant behaviour</div>
-          </div>
-        </div> -->
-      </div><!-- column -->
-    </section>
-  </div><!-- / govuk-grid-row -->
-</div><!-- / staff__heading -->
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-    <div class="govuk-warning-text">
-      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-      <strong class="govuk-warning-text__text">
-        <span class="govuk-warning-text__assistive">Warning</span>
-        Make sure you have completed the IQA form
-      </strong>
-    </div>
-
-    <div class="govuk-width-container">
+    <div class="govuk-width-container govuk-!-margin-top-9">
       <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
         <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-grid-column-full">
             <div class="govuk-panel govuk-panel--confirmation">
               <h1 class="govuk-panel__title">
-                Application complete
+                You have released the assessment report to DWP
               </h1>
               <div class="govuk-panel__body">
-                Your reference number<br><strong>HDJ2123F</strong>
+                This will be picked up by the Decision makers
               </div>
             </div>
-
-            <p class="govuk-body">We have sent you a confirmation email.</p>
-
-            <h2 class="govuk-heading-m">What happens next</h2>
-
-            <p class="govuk-body">
-              We’ve sent your application to Hackney Electoral Register Office.
-            </p>
-            <p class="govuk-body">
-              They will contact you either to confirm your registration, or to ask for more information.
-            </p>
-
-            <p class="govuk-body">
-              <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
-            </p>
           </div>
         </div>
+        <!--<button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button> -->
+        <input type="submit" class="govuk-button" value="Continue" id="submit">
       </main>
     </div>
+
+
 
     <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -98,7 +44,6 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.d</p>
 
-  </div>{# /govuk-grid-column #}
-</div>{# /govuk-grid-row #}
+
 
 {% endblock %}
