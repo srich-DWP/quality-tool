@@ -9,11 +9,11 @@
 {% endblock %}
 
 {% block leftPanel %}
-<a href="audit-betty-rubble-1-locked" class="govuk-back-link">Back</a>
+<a href="dm-list" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
-<form id="form" method="post" action="audit-list-updated">
+<form id="form" method="post" action="dm-list-updated">
 
 <div class="staff__heading govuk-!-margin-bottom-9">
   <div class="govuk-grid-row">
@@ -22,16 +22,16 @@
         <h1 class="key-details-heading-small">Customer details</h1>
         <dl>
           <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Cindy Purple</dd>
+          <dd class="key-details-heading-large">Omar Pink</dd>
           <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">LL 78 56 24 L</dd>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">TT 99 88 77 T</dd>
         </dl>
       </div><!-- column -->
       <div class="govuk-grid-column-one-half">
         <dl class="key-details-summary-list">
           <div class="col1">
             <dt>Date of birth</dt>
-            <dd>3 January 1965</dd>
+            <dd>10 April 1999</dd>
           </div>
           <div class="col2">
             <dt>Benefit</dt>
@@ -52,33 +52,33 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <div class="govuk-warning-text">
+    <!-- <div class="govuk-warning-text">
       <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
       <strong class="govuk-warning-text__text">
         <span class="govuk-warning-text__assistive">Warning</span>
         Make sure you have completed the IQA form
       </strong>
-    </div>
+    </div> -->
 
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-fieldset__heading">
-            Can this assessment be released to DWP?
+            Have you found this asessment report fit for purpose?
           </h1>
         </legend>
-        
-        <div class="govuk-radios govuk-radios--inline">
+
+        <div class="govuk-radios govuk-radios">
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
             <label class="govuk-label govuk-radios__label" for="changed-name">
-              Yes
+              Yes, release the report for processing
             </label>
           </div>
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
             <label class="govuk-label govuk-radios__label" for="changed-name-2">
-              No
+              No, return the report for rework
             </label>
           </div>
         </div>
@@ -87,7 +87,7 @@
 
     <div>
       <input type="submit" class="govuk-button" value="Continue" id="submit"><!-- backdate -->
-     </form>  
+     </form>
     </div>
 
     <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
