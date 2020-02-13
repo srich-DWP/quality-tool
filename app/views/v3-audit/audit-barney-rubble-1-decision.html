@@ -35,7 +35,7 @@
           </div>
           <div class="col2">
             <dt>Benefit</dt>
-            <dd>Employment support allowance</dd>
+            <dd>Employment Support Allowance</dd>
           </div>
         </dl>
         <div class="header-spread-right">
@@ -52,15 +52,58 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There is a problem
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#changed-name">Select if you you can release this report to DWP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="govuk-warning-text">
       <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
       <strong class="govuk-warning-text__text">
         <span class="govuk-warning-text__assistive">Warning</span>
-        Make sure you have completed the IQA form
+        Make sure you have completed the IQA form and updated your workflow and audit outcome documents
       </strong>
     </div>
 
-    <div class="govuk-form-group">
+
+
+    <div class="govuk-form-group govuk-form-group--error">
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint changed-name-error">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Can this assessment be released to DWP?
+          </h1>
+        </legend>
+        <span id="changed-name-error" class="govuk-error-message">
+          <span class="govuk-visually-hidden">Error:</span> Select yes if the report can be released to DWP
+        </span>
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div> <!-- govuk-form-group govuk-form-group-error -->
+
+
+    <!--<div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-fieldset__heading">
@@ -83,7 +126,7 @@
           </div>
         </div>
       </fieldset>
-    </div>{# /govuk-form-group #}
+    </div>{# /govuk-form-group #} -->
 
     <div>
       <input type="submit" class="govuk-button" value="Continue" id="submit"><!-- backdate -->
