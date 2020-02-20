@@ -1,0 +1,135 @@
+
+{% extends "layout-staff-full.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block serviceName %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+  <a href="http://localhost:3001/fha/v8/" class="govuk-back-link">Back to dashboard</a>
+
+  <h1 class="govuk-heading-xl" style="margin-bottom: 0px">9</h1>
+  <h2 class="govuk-heading-m">Ready to audit</h2>
+
+
+  <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Claimant reference</th>
+          <th scope="col" class="govuk-table__header">Days since assessment</th>
+          <th scope="col" class="govuk-table__header">Assessment centre</th>
+          <th scope="col" class="govuk-table__header">Benefit type</th>
+          <th scope="col" class="govuk-table__header">Assessment type</th>
+          <th scope="col" class="govuk-table__header">Audit status</th>
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+         <td class="govuk-table__cell">AA 12 34 56 A</td>
+         <td class="govuk-table__cell">4 days</td>
+         <td class="govuk-table__cell">Tresco House</td>
+         <td class="govuk-table__cell">ESA</td>
+         <td class="govuk-table__cell">Face to Face</td>
+          <td class="govuk-table__cell"></td>
+         <td class="govuk-table__cell"><a href="audit-barney-rubble-1-locked" class="govuk-link">Start audit</a></td>
+       </tr>
+       <tr class="govuk-table__row">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">WW 98 76 54 W</td>
+          <td class="govuk-table__cell">3 days</td>
+          <td class="govuk-table__cell">Tresco House</td>
+          <td class="govuk-table__cell">ESA</td>
+          <td class="govuk-table__cell">Face to Face</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag">In progress</strong></td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+      </tr>
+      <tr class="govuk-table__row">
+       <tr class="govuk-table__row">
+        <td class="govuk-table__cell">JJ 67 54 12 J</td>
+        <td class="govuk-table__cell">3 days</td>
+        <td class="govuk-table__cell">Tresco House</td>
+        <td class="govuk-table__cell">UC</td>
+        <td class="govuk-table__cell">Paper Based Assessment</td>
+         <td class="govuk-table__cell"><strong class="govuk-tag">In progress</strong></td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">LL 78 56 34 L</td>
+      <td class="govuk-table__cell">3 days</td>
+      <td class="govuk-table__cell">Five Ways</td>
+      <td class="govuk-table__cell">ESA</td>
+      <td class="govuk-table__cell">Paper Based Assessment</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag">In progress</strong></td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">TT 99 88 77 T</td>
+      <td class="govuk-table__cell">2 days</td>
+      <td class="govuk-table__cell">Tresco House</td>
+      <td class="govuk-table__cell">ESA</td>
+      <td class="govuk-table__cell">Face to Face</td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><a href="audit-pebbles-flintstone-1-locked" class="govuk-link">Start audit</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">UU 98 12 56 U</td>
+      <td class="govuk-table__cell">2 days</td>
+      <td class="govuk-table__cell">Tresco House</td>
+      <td class="govuk-table__cell">ESA</td>
+      <td class="govuk-table__cell">Terminally Ill</td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><a href="audit-barney-rubble-3-locked" class="govuk-link">Start audit</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">KK 44 56 77 K</td>
+      <td class="govuk-table__cell">2 days</td>
+      <td class="govuk-table__cell">Tresco House</td>
+      <td class="govuk-table__cell">UC</td>
+      <td class="govuk-table__cell">Face to Face</td>
+       <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><a href="audit-wilma-flintstone-2-locked" class="govuk-link">Start audit</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">QQ 98 76 54 Q</td>
+      <td class="govuk-table__cell">2 days</td>
+      <td class="govuk-table__cell">Wolverhampton</td>
+      <td class="govuk-table__cell">UC</td>
+      <td class="govuk-table__cell">Paper Based Assessment</td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><a href="audit-sam-slagheap-1-locked" class="govuk-link">Start audit</a></td>
+    </tr>
+    </tr>
+    <tr class="govuk-table__row">
+     <tr class="govuk-table__row">
+      <td class="govuk-table__cell">PP 24 35 57 P</td>
+      <td class="govuk-table__cell">2 days</td>
+      <td class="govuk-table__cell">Tresco House</td>
+      <td class="govuk-table__cell">ESA</td>
+      <td class="govuk-table__cell">Face to Face</td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><a href="audit-barney-rubble-4-locked" class="govuk-link">Start audit</a></td>
+    </tr>
+    </tr>
+    </tbody>
+  </table>
+
+{% endblock %}

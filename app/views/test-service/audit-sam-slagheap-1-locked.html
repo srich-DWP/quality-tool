@@ -1,0 +1,542 @@
+{% extends "layout-staff-full-sidebar.html" %}
+
+{% block pageTitle %}
+{{ serviceName }}
+{% endblock %}
+
+{% block serviceName %}
+{{ serviceName }}
+{% endblock %}
+
+{% block leftPanel %}
+  <form id="form" method="post" action="audit-sam-slagheap-1-decision">
+    <div>
+      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Finish audit" id="submit"><!-- audit-sam-slagheap-1-decision -->
+    </div>
+  </form>    
+  <div>
+    <a href="audit-list" class="govuk-link">Cancel audit</a>
+  </div>  
+{% endblock %}
+
+{% block content %}
+
+<div class="staff__heading govuk-!-margin-bottom-9">
+  <div class="govuk-grid-row">
+    <section class="key-details" role="contentinfo" aria-label="Key details">
+      <div class="govuk-grid-column-one-half">
+        <h1 class="key-details-heading-small">Customer details</h1>
+        <dl>
+          <dt class="govuk-visually-hidden">Name:</dt>
+          <dd class="key-details-heading-large">Imelda Indigo</dd>
+          <dt class="govuk-visually-hidden">National Insurance number:</dt>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">QQ 98 76 54 Q</dd>
+        </dl>
+      </div><!-- column -->
+      <div class="govuk-grid-column-one-half">
+        <dl class="key-details-summary-list">
+          <div class="col1">
+            <dt>Date of birth</dt>
+            <dd>3 June 1987</dd>
+          </div>
+          <div class="col2">
+            <dt>Benefit</dt>
+            <dd>Universal credit</dd>
+          </div>
+        </dl>
+        <div class="header-spread-right">
+          <!--<div class="header-identifiers">
+            <div class="badge">Unacceptable claimant behaviour</div>
+          </div>
+        </div> -->
+      </div><!-- column -->
+    </section>
+  </div><!-- / govuk-grid-row -->
+</div><!-- / staff__heading -->
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Work capability report</h1>
+
+    <table class="govuk-table report-view-table">
+      <caption class="govuk-table__caption">Assessment overview</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date of assessment</th>
+          <td class="govuk-table__cell">19 November</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment centre</th>
+          <td class="govuk-table__cell">Molineux House, Wolverhampton</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessor</th>
+          <td class="govuk-table__cell">Sam Slagheap</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment start</th>
+          <td class="govuk-table__cell">14.30</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment finish</th>
+          <td class="govuk-table__cell">15.30</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="bold-hr">
+
+   <h2 class="govuk-heading-l">Illnesses, disabilities and medication</h2>  
+
+    <h2 class="govuk-heading-m">Condition history</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Illnesses and disabilities</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Name</th>
+          <th scope="row" class="govuk-table__header">Source</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Anxiety</td>
+          <td class="govuk-table__cell">Claimant</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Deperssion</td>
+          <td class="govuk-table__cell">GP</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Medication and side effects</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Name</th>
+          <th scope="row" class="govuk-table__header">Dose</th>
+          <th scope="row" class="govuk-table__header">Side effects</th>
+        </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Mirtazapine</td>
+          <td class="govuk-table__cell">Once daily</td>
+          <td class="govuk-table__cell">Weight increase</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-l">Descriptors:</h2>
+
+    <h3 class="heading-inverted">Moving around and using steps without help</h3>
+
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Relevant statements</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Joshua goes to the shop each morning, he goes alone.</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Lives in a residential home with no famliy around</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Finds it hard to be around other people</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 class="govuk-heading-s">How far can Customer walk or move on level ground without help from someone, and without stopping due to severe pain or tiredness?</h4>
+    <p>No more than 50 metres</p>
+    <h4 class="govuk-heading-s">Can Customer go up or down 2 steps without help, if they use a handrail?</h4>
+    <p>No</p>
+    <h4 class="govuk-heading-s ">Justification:</h4>
+    <p class="govuk-!-margin-bottom-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h3 class="heading-inverted">Standing, sitting and moving between the two</h3>
+
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Relevant statements</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Statement about Alan and his ability to sit.</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Statement about Alan and his ability to stand.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 class="govuk-heading-s">Can Alan move from one seat to another right next to it without help from another person</h4>
+    <p>No</p>
+
+    <h4 class="govuk-heading-s">Justification:</h4>
+    <p class="govuk-!-margin-bottom-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h3 class="heading-inverted">Statements not attached to a descriptor</h3>
+
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Relevant statements</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Statement which doesn't fit into a descriptor.</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Statement which doesn't fit into a descriptor.</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Statement which doesn't fit into a descriptor.</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Statement which doesn't fit into a descriptor.</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Statement which doesn't fit into a descriptor.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-l">Observed behaviour</h2> 
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Relevant statements</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Walked from waiting are to assessment room with no visible signs of discomfort, approximately 20 metres</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Completed the co-ordination examination with smooth movement</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Upper limb movements appeared fluid and pain free in the left side</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Sat throughout the duration of the assessment and showed no sign of pain or discomfort</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-l">Exceptional circumstances</h2> 
+    <h4 class="govuk-heading-s">Circumstances why Alan should be treated as LCW and LCWRA:</h4>
+    <p>None</p>
+    <h4 class="govuk-heading-s">Circumstances why Alan should be treated as LCW:</h4>
+    <p class="govuk-!-margin-bottom-6">None</p>
+
+    <hr class="bold-hr"> 
+
+    <h2 class="govuk-heading-l">Prognosis</h2> 
+    <h4 class="govuk-heading-s">Time until Alan's case needs reviewing:</h4>
+    <p>Within 2 years</p>
+    <h4 class="govuk-heading-s">Reason:</h4>
+    <p class="govuk-!-margin-bottom-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-l">Physical assessments</h2>    
+    <p class="govuk-!-margin-bottom-6">Consent was given by Alan to start the physical assessment.</p>
+
+    <h3 class="heading-inverted">General health</h3>
+
+    <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+      <caption class="govuk-table__caption">Recordings</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Stated height</th>
+          <td class="govuk-table__cell">
+            6ft
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Stated weight</th>
+          <td class="govuk-table__cell">
+           14st
+         </td>
+       </tr>
+       <tr class="govuk-table__row">
+        <th class="govuk-table__header">Bmi</th>
+        <td class="govuk-table__cell">
+          555
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Other examination findings</th>
+        <td class="govuk-table__cell">Slight swelling on face</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="heading-inverted">Lower back and legs</h3>
+
+  <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+    <caption class="govuk-table__caption">Lower back</caption>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Forward flexion</th>
+        <td class="govuk-table__cell">
+          Unrestricted
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Other examination findings </th>
+        <td class="govuk-table__cell">
+          Comments here
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+    <caption class="govuk-table__caption">Left leg</caption>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Straight leg raising</th>
+        <td class="govuk-table__cell">
+          Normal
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Hip flexion</th>
+        <td class="govuk-table__cell">  
+          Normal (more than 130˚)
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Knee flexion</th>
+        <td class="govuk-table__cell">
+          Normal (more than 120˚)
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Knee extension</th>
+        <td class="govuk-table__cell">  
+          Full
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">External hip rotation</th>
+        <td class="govuk-table__cell">  
+          Normal (more than 45˚)
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Power</th>
+        <td class="govuk-table__cell">  
+          Normal
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Other examination findings </th>
+        <td class="govuk-table__cell">
+        Comments added</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+    <caption class="govuk-table__caption">Right leg</caption>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Straight leg raising</th>
+        <td class="govuk-table__cell">
+          Normal
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Hip flexion</th>
+        <td class="govuk-table__cell">  
+          Normal (more than 130˚)
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Knee flexion</th>
+        <td class="govuk-table__cell">
+          Normal (more than 120˚)
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Knee extension</th>
+        <td class="govuk-table__cell">  
+          Full
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">External hip rotation</th>
+        <td class="govuk-table__cell">  
+          Normal (more than 45˚)
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Power</th>
+        <td class="govuk-table__cell">  
+          Normal
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Other examination findings </th>
+        <td class="govuk-table__cell">
+        Comments added</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="heading-inverted">Cardiovascular and respiratory</h3>
+
+  <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+    <caption class="govuk-table__caption">Respiratory rate</caption>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Respiratory at rest</th>
+        <td class="govuk-table__cell">
+          9
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Other examination findings </th>
+        <td class="govuk-table__cell">
+          Comments added
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+    <caption class="govuk-table__caption">Radial pulse</caption>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Radial pulse – rate, rhythm, character</th>
+        <td class="govuk-table__cell">
+          Regular pulse
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Other examination findings </th>
+        <td class="govuk-table__cell">
+          No other findings
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+    <caption class="govuk-table__caption">Left leg peripheral circulation</caption>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Oedema</th>
+        <td class="govuk-table__cell">
+         Comments on this...
+       </td>
+     </tr>
+     <tr class="govuk-table__row">
+      <th class="govuk-table__header">Dorsalis pedis pulse</th>
+      <td class="govuk-table__cell">
+        Comments on this...
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Varicose veins</th>
+      <td class="govuk-table__cell">
+        Comments on this...
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Other examination findings</th>
+      <td class="govuk-table__cell">
+        Comments on this...
+      </td>
+    </tr>
+   </tbody>
+ </table>
+
+<table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+  <caption class="govuk-table__caption">Right leg peripheral circulation</caption>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Oedema</th>
+      <td class="govuk-table__cell">
+       Comments on this...
+     </td>
+   </tr>
+   <tr class="govuk-table__row">
+    <th class="govuk-table__header">Dorsalis pedis pulse</th>
+    <td class="govuk-table__cell">
+      Comments on this...
+    </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Varicose veins</th>
+      <td class="govuk-table__cell">
+        Comments on this...
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Other examination findings</th>
+      <td class="govuk-table__cell">
+        Comments on this...
+      </td>
+    </tr>
+  </tbody>
+ </table>
+
+<table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+  <caption class="govuk-table__caption">Blood pressure</caption>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Blood pressure</th>
+      <td class="govuk-table__cell">
+       333
+     </td>
+   </tr>
+   <tr class="govuk-table__row">
+    <th class="govuk-table__header">Other examination findings</th>
+    <td class="govuk-table__cell">
+      Comments added...
+    </td>
+  </tr>
+ </tbody>
+</table>
+
+<table class="govuk-table report-view-table govuk-!-margin-bottom-6">
+  <caption class="govuk-table__caption">Peak expiry flow rate</caption>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Technique</th>
+      <td class="govuk-table__cell">
+        Comments here...
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Value</th>
+      <td class="govuk-table__cell">
+        Comments here...
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header">Meter type</th>
+      <td class="govuk-table__cell">
+       Comments here...
+     </td>
+     </tr>
+     <tr class="govuk-table__row">
+      <th class="govuk-table__header">Other examination findings</th>
+      <td class="govuk-table__cell">
+        Comments here...
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>{# /govuk-grid-column #}
+</div>{# /govuk-grid-row #}
+
+{% endblock %}
