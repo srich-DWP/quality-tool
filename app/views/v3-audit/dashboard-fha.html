@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title> Health and disability </title>
+
+  <!--[if gt IE 8]><!--><link href="https://healthanddisability.herokuapp.com/public/stylesheets/govuk-template.css?0.19.0" media="screen" rel="stylesheet" /><!--<![endif]-->
+  <!--[if IE 6]><link href="/public/stylesheets/govuk-template-ie6.css?0.19.0" media="screen" rel="stylesheet" /><![endif]-->
+  <!--[if IE 7]><link href="/public/stylesheets/govuk-template-ie7.css?0.19.0" media="screen" rel="stylesheet" /><![endif]-->
+  <!--[if IE 8]><link href="/public/stylesheets/govuk-template-ie8.css?0.19.0" media="screen" rel="stylesheet" /><![endif]-->
+  <link href="https://healthanddisability.herokuapp.com/public/stylesheets/govuk-template-print.css?0.19.0" media="print" rel="stylesheet" />
+
+  <!--[if IE 8]><link href="/public/stylesheets/fonts-ie8.css?0.19.0" media="all" rel="stylesheet" /><![endif]-->
+  <!--[if gte IE 9]><!--><link href="https://healthanddisability.herokuapp.com/public/stylesheets/fonts.css?0.19.0" media="all" rel="stylesheet" /><!--<![endif]-->
+  <!--[if lt IE 9]><script src="/public/javascripts/ie.js?0.19.0"></script><![endif]-->
+
+  <link rel="shortcut icon" href="/public/images/favicon.ico?0.19.0" type="image/x-icon" />
+  <link rel="mask-icon" href="/public/images/gov.uk_logotype_crown.svg?0.19.0" color="#0b0c0c">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/images/apple-touch-icon-152x152.png?0.19.0">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/images/apple-touch-icon-120x120.png?0.19.0">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/images/apple-touch-icon-76x76.png?0.19.0">
+  <link rel="apple-touch-icon-precomposed" href="/public/images/apple-touch-icon-60x60.png?0.19.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="/public/images/opengraph-image.png?0.19.0">
+
+  <link href="https://healthanddisability.herokuapp.com/public/stylesheets/fha_v9.css" media="screen" rel="stylesheet" type="text/css" />
+  <!-- <link href="/public/stylesheets/printletter.css" media="print" rel="stylesheet" type="text/css" /> -->
+
+</head>
+
+<body class="">
+  <script>console.log({
+    "type": "an index page"
+  });</script>
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+  <div id="skiplink-container">
+    <div>
+      <a href="#content" class="skiplink">Skip to main content</a>
+    </div>
+  </div>
+
+  <header role="banner" id="global-header" class=" with-proposition">
+    <div class="header-wrapper ">
+      <div class="header-global">
+        <div class="header-logo" style="position:relative;top:3px">
+          <a href="/fha/v9/" id="logo" class="content dwplogo">Health Assessment </a>
+        </div>
+      </div>
+      <ul class="user_detail">
+        <!-- <li>Heather Harrison</li>
+        <li><a href=""> Sign out</a></li> -->
+      </ul>
+    </div>
+  </header>
+
+  <nav class="navigation-secondary">
+    <ul>
+      <li>
+        <a href="/fha/v9/" class="active">Case list</a>
+      </li>
+      <li>
+        <a href="/fha/v9/assessment-centres" class="">Manage centres</a>
+      </li>
+      <li>
+        <a href="/fha/v9/planning" class="">Capacity management</a>
+      </li>
+      <li>
+        <a href="/fha/v9/search-results-id" class="">Customer search</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div nunj-block="assess_content">
+
+    <main id="content" role="main" class="main-content">
+      <div class="container">
+        <div class="grid-row">
+          <div class="column-one-quarter">
+
+            <div class="search-customer">
+              <form action="/fha/v9/search-results" method="post">
+                <label class="form-label-bold visually-hidden" for="search">Customer search</label>
+                <span class="form-hint">Search by NI number</span>
+                <input class="form-control form-control-2-3" id="search" type="text" name="search">
+                <button class="gem-c-search__submit">Search</button>
+              </form>
+            </div>
+          </div>
+          <div class="column-three-quarters">
+            <div class="grid-row">
+              <div class="column-full">
+                <a href="#" class="button mt25">Create new referral</a>
+                <hr />
+                <h1 class="heading-xlarge mt0 mb20">450 cases</h1>
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="card-container">
+
+                <div class="card">
+                  <a href="/fha/v9/referrals.html">
+                    <h2 class="heading-xlarge">49<span class="heading-small">Referrals</span></h2>
+                  </a>
+                  <ul>
+                    <li><a href="/fha/v9/new-referrals.html"> New referrals (35)</a></li>
+                    <li><a href="/fha/v9/uc50-posted.html"> In progress (10)</a></li>
+                    <li><a href="/fha/v9/ed-referrals">DNA re-referalls (2) </a></li>
+                  </ul>
+                </div>
+
+                <div class="card">
+                  <a href="/fha/v9/review.html">
+                    <h2 class="heading-xlarge">44<span class="heading-small">Reviews</span></h2>
+                  </a>
+                  <ul>
+                    <li><a href="/fha/v9/ready-for-review.html">Ready for review (18)</a></li>
+                    <li><a href="/fha/v9/requested-medical-evidence.html">Requested medical evidence (24)</a></li>
+                  </ul>
+                </div>
+
+                <div class="card">
+                  <a href="/fha/v9/appointments.html">
+                    <h2 class="heading-xlarge">21<span class="heading-small">Appointments</span>
+                    </h2>
+                  </a>
+                  <ul>
+                    <li><a href="/fha/v9/ready-to-book">Ready to book (11)</a></li>
+                    <li><a href="/fha/v9/booked-appointments">Booked appointments(4)</a></li>
+                    <li><a href="/fha/v9/did-not-attend">Did not attend (1)</a></li>
+                  </ul>
+                </div>
+
+                <div class="card">
+                  <a href="/fha/v9/assessment.html">
+                    <h2 class="heading-xlarge">21<span class="heading-small">Today's appointments</span>
+                    </h2>
+                  </a>
+                  <ul>
+                    <li><a href="/fha/v9/todays-appointments.html">Confirm arrival (7)</a></li>
+                    <li><a href="/fha/v9/ready-for-assessment.html">Ready for assessment (10)</a></li>
+                    <li><a href="/fha/v9/assessment-stopped">Assessments stopped (2)</a></li>
+                    <li><a href="/fha/v9/completed-assessments">Assessments completed (1)</a></li>
+                  </ul>
+                </div>
+
+                <div class="card">
+                  <a href="/fha/v9/decision-maker.html">
+                    <h2 class="heading-xlarge">21<span class="heading-small">DWP decision's to make</span>
+                    </h2>
+                  </a>
+                  <ul>
+                    <li><a href="/fha/v9/assessment-reports.html">Completed assessments (8)</a></li>
+                    <li><a href="/fha/v9/failed-to-attend.html">Did not attend (8)</a></li>
+                    <li><a href="/fha/v9/good-cause">Questionnaire not returned (4)</a></li>
+                    <li><a href="/fha/v9/good-cause-not-accepted">Good cause not accepted (2)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- column -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </main>
+  </div> <!-- asess-content -->
+
+  <footer class="group js-footer" id="footer" role="contentinfo">
+    <div class="footer-wrapper">
+
+    <!--  <ul class="footer-links">
+        <li><a href="/">back to index page</a></li>
+        <li><a href="/fha/v9/clearSession" id="clear_data" class="function_link">clear data</a></li>
+        <li><a href="/fha/scrutiny-scenarios/index" id="clear_data" class="function_link">scrutiny scenarios</a></li>
+      </ul> -->
+      <div class="footer-meta">
+        <div class="footer-meta-inner">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="global-app-error" class="app-error hidden"></div>
+  <!-- Javascript -->
+  <script src="/public/javascripts/govuk-template.js?0.19.0"></script>
+  <script src="/public/javascripts/details.polyfill.js"></script>
+  <script src="/public/javascripts/jquery-1.11.3.js"></script>
+  <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+  <script src="/public/javascripts/govuk/selection-buttons.js"></script>
+  <script src="/public/javascripts/govuk/shim-links-with-button-role.js"></script>
+  <script src="/public/javascripts/govuk/show-hide-content.js"></script>
+  <script src="/public/javascripts/combobox.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="/public/javascripts/application_v8.js"></script>
+  <script>console.log("path: fha/v9");</script>
+  <script>console.log("path1: fha/v9/");</script>
+  <script>console.log("path2: fha/v9//undefined");</script>
+  <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+</body>
+</html>
