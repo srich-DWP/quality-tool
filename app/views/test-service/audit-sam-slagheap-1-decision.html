@@ -39,10 +39,6 @@
           </div>
         </dl>
         <div class="header-spread-right">
-          <!--<div class="header-identifiers">
-            <div class="badge">Unacceptable claimant behaviour</div>
-          </div>
-        </div> -->
       </div><!-- column -->
     </section>
   </div><!-- / govuk-grid-row -->
@@ -98,5 +94,38 @@
 
   </div>{# /govuk-grid-column #}
 </div>{# /govuk-grid-row #}
+
+{% endblock %}
+
+{% block pageScripts %}
+  <script type="text/javascript">
+    $(document).on('ready',function()
+    {
+      // target the #form element
+      // attached an event listener that runs
+      // a function when the form is submitted
+      $('#form').on('submit', function(e)
+      {
+        // depending on the value="" of the <input>
+        // that's been checked, change the action=""
+        // of the <form> and then allow it to submit.
+      	switch($('input[name="changed-name"]:checked').val())
+        {
+      		case 'yes':
+      	    $('#form').attr('action','audit-list-updated');
+      		  break;
+          case 'no':
+      	    $('#form').attr('action','audit-list-updated');
+      		  break;
+          default:
+            $('#form').attr('action','audit-sam-slagheap-1-decision-error');
+        }
+        // if nothing is ticked submit the form to error screen.
+        // returning 'true' allows the form to submit
+        // after we're finished with the above.
+        return true;
+      });
+    });
+  </script>
 
 {% endblock %}
