@@ -9,15 +9,14 @@
 {% endblock %}
 
 {% block leftPanel %}
-  <form id="form" method="post" action="dm-decision-1">
+  <form id="form" method="post" action="dm-decision-2">
     <div>
-      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Make a decision" id="submit">
+      <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Make a decision" id="submit"><!-- backdate -->
     </div>
   </form>
   <div>
     <a href="dm-list" class="govuk-link">Cancel</a>
   </div>
-
 {% endblock %}
 
 {% block content %}
@@ -29,27 +28,22 @@
         <h1 class="key-details-heading-small">Customer details</h1>
         <dl>
           <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Alan Turquoise</dd>
+          <dd class="key-details-heading-large">John Red</dd>
           <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">AA 12 34 56 A</dd>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">WW 98 76 54 W</dd>
         </dl>
       </div><!-- column -->
       <div class="govuk-grid-column-one-half">
         <dl class="key-details-summary-list">
           <div class="col1">
             <dt>Date of birth</dt>
-            <dd>5 August 1966</dd>
+            <dd>22 June 1990</dd>
           </div>
           <div class="col2">
             <dt>Benefit</dt>
             <dd>Employment and Support Allowance</dd>
           </div>
         </dl>
-        <div class="header-spread-right">
-          <div class="header-identifiers">
-            <div class="badge">Unacceptable claimant behaviour</div>
-          </div>
-        </div>
       </div><!-- column -->
     </section>
   </div><!-- / govuk-grid-row -->
@@ -66,7 +60,7 @@
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Date of assessment</th>
-          <td class="govuk-table__cell">17 November 2019</td>
+          <td class="govuk-table__cell">18 November 2019</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment centre</th>
@@ -78,11 +72,11 @@
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment start</th>
-          <td class="govuk-table__cell">12.30</td>
+          <td class="govuk-table__cell">14.00</td>
         </tr>
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">Assessment finish</th>
-          <td class="govuk-table__cell">13.00</td>
+          <td class="govuk-table__cell">14.45</td>
         </tr>
       </tbody>
     </table>
@@ -105,20 +99,12 @@
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Diabetes</td>
+          <td class="govuk-table__cell">Anxiety</td>
           <td class="govuk-table__cell">Claimant</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Arthritis</td>
-          <td class="govuk-table__cell">Claimant</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Liver disease</td>
-          <td class="govuk-table__cell">Claimant</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Urine problems</td>
-          <td class="govuk-table__cell">Claimant</td>
+          <td class="govuk-table__cell">Deperssion</td>
+          <td class="govuk-table__cell">GP</td>
         </tr>
       </tbody>
     </table>
@@ -135,9 +121,9 @@
 
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Ibuprofen</td>
-          <td class="govuk-table__cell">Twice daily</td>
-          <td class="govuk-table__cell">None</td>
+          <td class="govuk-table__cell">Mirtazapine</td>
+          <td class="govuk-table__cell">Once daily</td>
+          <td class="govuk-table__cell">Weight increase</td>
         </tr>
       </tbody>
     </table>
@@ -152,13 +138,13 @@
       <caption class="govuk-table__caption">Relevant statements</caption>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Alan goes to the shop each morning, he goes alone.</td>
+          <td class="govuk-table__cell">Joshua goes to the shop each morning, he goes alone.</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Lives in a top floor flat without access to a lift.</td>
+          <td class="govuk-table__cell">Lives in a residential home with no famliy around</td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Walks up and down 4 flights of stairs when going outside.</td>
+          <td class="govuk-table__cell">Finds it hard to be around other people</td>
         </tr>
       </tbody>
     </table>

@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block leftPanel %}
-<a href="dm-list" class="govuk-back-link">Back</a>
+<a href="dm-decision-5-locked" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -39,10 +39,6 @@
           </div>
         </dl>
         <div class="header-spread-right">
-          <!--<div class="header-identifiers">
-            <div class="badge">Unacceptable claimant behaviour</div>
-          </div>
-        </div> -->
       </div><!-- column -->
     </section>
   </div><!-- / govuk-grid-row -->
@@ -51,14 +47,6 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-
-    <!-- <div class="govuk-warning-text">
-      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-      <strong class="govuk-warning-text__text">
-        <span class="govuk-warning-text__assistive">Warning</span>
-        Make sure you have completed the IQA form
-      </strong>
-    </div> -->
 
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
@@ -98,5 +86,38 @@
 
   </div>{# /govuk-grid-column #}
 </div>{# /govuk-grid-row #}
+
+{% endblock %}
+
+{% block pageScripts %}
+  <script type="text/javascript">
+    $(document).on('ready',function()
+    {
+      // target the #form element
+      // attached an event listener that runs
+      // a function when the form is submitted
+      $('#form').on('submit', function(e)
+      {
+        // depending on the value="" of the <input>
+        // that's been checked, change the action=""
+        // of the <form> and then allow it to submit.
+      	switch($('input[name="changed-name"]:checked').val())
+        {
+      		case 'yes':
+      	    $('#form').attr('action','dm-list-updated');
+      		  break;
+          case 'no':
+      	    $('#form').attr('action','dm-list-updated');
+      		  break;
+          default:
+            $('#form').attr('action','dm-decision-5-error');
+        }
+        // if nothing is ticked submit the form to error screen.
+        // returning 'true' allows the form to submit
+        // after we're finished with the above.
+        return true;
+      });
+    });
+  </script>
 
 {% endblock %}
