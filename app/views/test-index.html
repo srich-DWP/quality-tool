@@ -1,0 +1,31 @@
+{% extends "layout_master.html" %}
+
+{% block pageTitle %}
+{{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-!-margin-bottom-5">
+  <a href="index" rel="prev" class="govuk-back-link">Back to main index</a>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Audit assessment reports
+    </h1>
+
+    <h2 class="govuk-heading-m">Release 0</h2>
+    <p>Initial audit service prototype.</p>
+    <a href="/test-service/dashboard-fha" class="govuk-button" style="margin-bottom: 0">Open prototype</a>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+  </div> <!-- govuk-grid-row-column-full -->
+</div> <!-- govuk-grid-row -->
+
+{% endblock %}
