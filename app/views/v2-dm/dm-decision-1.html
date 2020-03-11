@@ -1,0 +1,126 @@
+{% extends "layout-staff-full-sidebar.html" %}
+
+{% block pageTitle %}
+{{ serviceName }}
+{% endblock %}
+
+{% block serviceName %}
+{{ serviceName }}
+{% endblock %}
+
+{% block leftPanel %}
+<a href="dm-list" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+<form id="form" method="post" action="dm-list-updated">
+
+<div class="staff__heading govuk-!-margin-bottom-9">
+  <div class="govuk-grid-row">
+    <section class="key-details" role="contentinfo" aria-label="Key details">
+      <div class="govuk-grid-column-one-half">
+        <h1 class="key-details-heading-small">Claimant details</h1>
+        <dl>
+          <dt class="govuk-visually-hidden">Name:</dt>
+          <dd class="key-details-heading-large">Alan Turquoise</dd>
+          <dt class="govuk-visually-hidden">National Insurance number:</dt>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">AA 12 34 56 A</dd>
+        </dl>
+      </div><!-- column -->
+      <div class="govuk-grid-column-one-half">
+        <dl class="key-details-summary-list">
+          <div class="col1">
+            <dt>Date of birth</dt>
+            <dd>5 August 1966</dd>
+          </div>
+          <div class="col2">
+            <dt>Benefit</dt>
+            <dd>Employment and Support Allowance</dd>
+          </div>
+        </dl>
+        <div class="header-spread-right">
+          <div class="header-identifiers">
+            <div class="badge">Unacceptable claimant behaviour</div>
+          </div>
+        </div>
+      </div><!-- column -->
+    </section>
+  </div><!-- / govuk-grid-row -->
+</div><!-- / staff__heading -->
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+          Can you make a decision based on this report?
+          </h1>
+        </legend>
+
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>{# /govuk-form-group #}
+
+    <div>
+      <input type="submit" class="govuk-button" value="Continue" id="submit"><!-- backdate -->
+     </form>
+    </div>
+
+    <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.d</p>
+
+  </div>{# /govuk-grid-column #}
+</div>{# /govuk-grid-row #}
+
+{% endblock %}
+
+{% block pageScripts %}
+  <script type="text/javascript">
+    $(document).on('ready',function()
+    {
+      // target the #form element
+      // attached an event listener that runs
+      // a function when the form is submitted
+      $('#form').on('submit', function(e)
+      {
+        // depending on the value="" of the <input>
+        // that's been checked, change the action=""
+        // of the <form> and then allow it to submit.
+      	switch($('input[name="changed-name"]:checked').val())
+        {
+      		case 'yes':
+      	    $('#form').attr('action','dm-list-updated');
+      		  break;
+          case 'no':
+      	    $('#form').attr('action','dm-list-updated');
+      		  break;
+          default:
+            $('#form').attr('action','dm-decision-1-error');
+        }
+        // if nothing is ticked submit the form to error screen.
+        // returning 'true' allows the form to submit
+        // after we're finished with the above.
+        return true;
+      });
+    });
+  </script>
+
+{% endblock %}
