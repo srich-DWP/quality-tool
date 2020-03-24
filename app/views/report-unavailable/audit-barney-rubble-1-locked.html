@@ -1,0 +1,28 @@
+{% extends "layout-staff-full-sidebar.html" %}
+
+{% block pageTitle %}
+{{ serviceName }}
+{% endblock %}
+
+{% block serviceName %}
+{{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-width-container govuk-!-padding-top-9">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <h1 class="govuk-heading-xl">This report has already been audited</h1>
+          <p class="govuk-body">
+            <a href="audit-list-updated" class="govuk-link">Return to the case list</a> and select another report.
+          </p>
+        </div>  
+      </div>
+    </main>
+  </div>
+
+
+{% endblock %}
