@@ -9,11 +9,11 @@
 {% endblock %}
 
 {% block leftPanel %}
-<a href="audit-barney-rubble-1-locked" class="govuk-back-link">Back</a>
+<a href="audit-sam-slagheap-1-locked" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
-<form id="form" method="post" action="decision-amend-confirmation">
+<form id="form" method="post" action="audit-list-updated">
 
 <div class="staff__heading govuk-!-margin-bottom-9">
   <div class="govuk-grid-row">
@@ -22,27 +22,27 @@
         <h1 class="key-details-heading-small">Claimant details</h1>
         <dl>
           <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Sam Parker</dd>
+          <dd class="key-details-heading-large">Imelda Indigo</dd>
           <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">AA 12 34 56 C</dd>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">QQ 98 76 54 Q</dd>
         </dl>
       </div><!-- column -->
       <div class="govuk-grid-column-one-half">
         <dl class="key-details-summary-list">
           <div class="col1">
             <dt>Date of birth</dt>
-            <dd>21 May 2018</dd>
+            <dd>3 June 1987</dd>
           </div>
           <div class="col2">
             <dt>Benefit</dt>
-            <dd>Employment and Support Allowance</dd>
+            <dd>Universal Credit</dd>
           </div>
         </dl>
         <div class="header-spread-right">
-          <div class="header-identifiers">
+          <!--<div class="header-identifiers">
             <div class="badge">Unacceptable claimant behaviour</div>
           </div>
-        </div>
+        </div> -->
       </div><!-- column -->
     </section>
   </div><!-- / govuk-grid-row -->
@@ -51,15 +51,14 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <div class="govuk-form-group">
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-warning-text__assistive">Warning</span>
-          Make sure you have completed the IQA form and updated your workflow and audit outcome documents
-        </strong>
-      </div>
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        Make sure you have completed the IQA form and updated your workflow and audit outcome documents
+      </strong>
+    </div>
 
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
@@ -122,10 +121,9 @@
           case 'no':
       	    $('#form').attr('action','decision-amend-confirmation');
       		  break;
-          default:
-            $('#form').attr('action','audit-barney-rubble-1-decision-error');
+          // if nothing is ticked don't submit the form.
+          default: return false; break;
         }
-        // if nothing is ticked submit the form to error screen.
         // returning 'true' allows the form to submit
         // after we're finished with the above.
         return true;

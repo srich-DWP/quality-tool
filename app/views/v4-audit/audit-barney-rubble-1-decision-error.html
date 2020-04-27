@@ -22,16 +22,16 @@
         <h1 class="key-details-heading-small">Claimant details</h1>
         <dl>
           <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="key-details-heading-large">Sam Parker</dd>
+          <dd class="key-details-heading-large">Alan Turquoise</dd>
           <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">AA 12 34 56 C</dd>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">AA 12 34 56 A</dd>
         </dl>
       </div><!-- column -->
       <div class="govuk-grid-column-one-half">
         <dl class="key-details-summary-list">
           <div class="col1">
             <dt>Date of birth</dt>
-            <dd>21 May 2018</dd>
+            <dd>5 August 1966</dd>
           </div>
           <div class="col2">
             <dt>Benefit</dt>
@@ -51,21 +51,63 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <div class="govuk-form-group">
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-warning-text__assistive">Warning</span>
-          Make sure you have completed the IQA form and updated your workflow and audit outcome documents
-        </strong>
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There is a problem
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#changed-name">Select yes if the report can be released to DWP</a>
+          </li>
+        </ul>
       </div>
+    </div>
 
-    <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        Make sure you have completed the IQA form and updated your workflow and audit outcome documents
+      </strong>
+    </div>
+
+
+
+    <div class="govuk-form-group govuk-form-group--error">
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint changed-name-error">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-fieldset__heading">
             Can this report be released to DWP?
+          </h1>
+        </legend>
+        <span id="changed-name-error" class="govuk-error-message">
+          <span class="govuk-visually-hidden">Error:</span> Select yes if the report can be released to DWP
+        </span>
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div> <!-- govuk-form-group govuk-form-group-error -->
+
+
+    <!--<div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Can this assessment be released to DWP?
           </h1>
         </legend>
 
@@ -84,7 +126,7 @@
           </div>
         </div>
       </fieldset>
-    </div>{# /govuk-form-group #}
+    </div>{# /govuk-form-group #} -->
 
     <div>
       <input type="submit" class="govuk-button" value="Continue" id="submit"><!-- backdate -->
@@ -122,10 +164,9 @@
           case 'no':
       	    $('#form').attr('action','decision-amend-confirmation');
       		  break;
-          default:
-            $('#form').attr('action','audit-barney-rubble-1-decision-error');
+          // if nothing is ticked don't submit the form.
+          default: return false; break;
         }
-        // if nothing is ticked submit the form to error screen.
         // returning 'true' allows the form to submit
         // after we're finished with the above.
         return true;

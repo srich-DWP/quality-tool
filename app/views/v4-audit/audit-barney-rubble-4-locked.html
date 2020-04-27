@@ -1,0 +1,283 @@
+{% extends "layout-staff-full-sidebar.html" %}
+
+{% block pageTitle %}
+{{ serviceName }}
+{% endblock %}
+
+{% block serviceName %}
+{{ serviceName }}
+{% endblock %}
+
+{% block leftPanel %}
+  <div style="position: fixed; ">
+    <form id="form" method="post" action="audit-barney-rubble-4-decision">
+      <div>
+        <input type="submit" class="govuk-button govuk-!-margin-top-6" value="Finish audit" id="submit"><!-- audit-barney-rubble-4-decision -->
+      </div>
+    </form>
+    <div>
+      <a href="audit-list" class="govuk-link">Cancel audit</a>
+    </div>
+  </div>  
+{% endblock %}
+
+{% block content %}
+
+<div class="staff__heading govuk-!-margin-bottom-9">
+  <div class="govuk-grid-row">
+    <section class="key-details" role="contentinfo" aria-label="Key details">
+      <div class="govuk-grid-column-one-half">
+        <h1 class="key-details-heading-small">Claimant details</h1>
+        <dl>
+          <dt class="govuk-visually-hidden">Name:</dt>
+          <dd class="key-details-heading-large">Boris Brown</dd>
+          <dt class="govuk-visually-hidden">National Insurance number:</dt>
+          <dd class="govuk-caption-xl govuk-!-margin-bottom-6 govuk-!-margin-top-1">PP 24 25 57 P</dd>
+        </dl>
+      </div><!-- column -->
+      <div class="govuk-grid-column-one-half">
+        <dl class="key-details-summary-list">
+          <div class="col1">
+            <dt>Date of birth</dt>
+            <dd>20 October 1975</dd>
+          </div>
+          <div class="col2">
+            <dt>Benefit</dt>
+            <dd>Employment and Support Allowance</dd>
+          </div>
+        </dl>
+       <div class="header-spread-right">
+          <div class="header-identifiers">
+            <div class="badge">Unacceptable claimant behaviour</div>
+          </div>
+        </div>
+      </div><!-- column -->
+    </section>
+  </div><!-- / govuk-grid-row -->
+</div><!-- / staff__heading -->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Work capability report</h1>
+
+     <table class="govuk-table report-view-table">
+      <caption class="govuk-table__caption">Assessment overview</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date of assessment</th>
+          <td class="govuk-table__cell">25 March 2020</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment centre</th>
+          <td class="govuk-table__cell">Tresco House, London</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment start</th>
+          <td class="govuk-table__cell">15.00</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Assessment finish</th>
+          <td class="govuk-table__cell">15.30</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Condition history</h2>
+    <p>HCP enters the claimants conditions, illnesses and disabilities</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h3 class="govuk-heading-s">Condition 1:</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h3 class="govuk-heading-s">Condition 2:</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h3 class="govuk-heading-s">Condition 3:</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <p class="govuk-!-padding-top-8">Boris states there are no other conditions, illnesses or disabilities</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Medication and side effects</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Social and work history</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut venenatis tellus in.</p>
+    <p>Lectus nulla at volutpat diam ut venenatis tellus in.</p>
+    <p>Lectus nulla at volutpat diam ut venenatis tellus in.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Typical day</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <p>Massa tincidunt nunc pulvinar sapien.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <p>Massa tincidunt nunc pulvinar sapien.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Additional attendees</h2>
+
+    <p>lorem ipsum....</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Physical assessments</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+
+    <h3 class="govuk-heading-m">General health</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Mental health assessments</h2>
+    <h4 class="govuk-heading-s">Appearance</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Behaviour</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Speech</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Mood</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Cogniiton general</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Insight</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Thoughts</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Perceptions</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Addictions</h4>
+    <p>Example input</p>
+    <h4 class="govuk-heading-s">Cognitive test not assessed</h4>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Informal observations</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Massa tincidunt nunc pulvinar sapien.</p>
+
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Descriptors:</h2>
+    <p>I have considered the possible ESA activity outcomes and my advice is that the following apply:</p>
+
+    <h3 class="govuk-heading-m">Acivity descriptors listed here with claimant statements supporting each descriptor</h3>
+
+    <p class="govuk-body govuk-!-font-weight-bold">Moving around and climbing steps without someone's help</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Standing, sitting and moving bewteen the two</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Reaching</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Picking up and moving things<p>
+    <p class="govuk-body govuk-!-font-weight-bold">Using your hands</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Speaking, writing and typing</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Hearing and reading</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Seeing well enough to get around safely</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Controlling your bowels or bladder</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Staying conscious without fainting, seizures or blackouts</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Learning to do new tasks</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Being aware of hazards and danger</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Planning, starting and finishing every day tasks</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Coping wth changes to your daily routine</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Going out on your own</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Meeting and being with people<p>
+    <p class="govuk-body govuk-!-font-weight-bold">Behaving appropriately around other people</p>
+    <p class="govuk-body govuk-!-font-weight-bold">Eating and drinking</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Personal summary statement</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper elit eleifend, rutrum urna a, tempus ante. In eu libero faucibus sem sollicitudin commodo. Praesent vitae orci quis erat tincidunt lacinia. Maecenas sit amet rutrum diam. Proin ac ultricies ex. Nunc sollicitudin mollis eros sit amet vulputate. Suspendisse potenti. In sit amet elit sed mi egestas placerat. Mauris accumsan sodales mauris dignissim tristique.</p>
+    <p>Donec auctor leo lectus, ac cursus sem porta et. Pellentesque enim dolor, euismod id rhoncus ut, porttitor at mauris. Praesent mollis ante varius est aliquet interdum. Integer ac finibus nisl, in pulvinar lectus. Vestibulum fermentum dolor et nisl tristique porta. Donec ullamcorper faucibus dolor eu convallis. Quisque egestas bibendum leo id laoreet. Nullam ante est, interdum a semper a, condimentum suscipit mi.</p>
+    <p>Quisque efficitur nulla ac risus molestie, et pulvinar quam suscipit. Cras quis convallis odio, sit amet iaculis sem. Integer magna sem, porta ac ipsum eu, pretium facilisis nibh. Fusce efficitur vestibulum lacus in vehicula. Aliquam sed dolor eu lacus fermentum sollicitudin a a arcu. Pellentesque tincidunt justo at commodo bibendum. In nisi mi, euismod vitae malesuada eget, malesuada at neque. In tempus non massa eu maximus.</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Exceptional circumstances</h2>
+
+    <p class="govuk-!-padding-top-6">There are no exceptional circumstances why Boris should be treated as Limited Capability for Work and Limited Capability for Work Related Acvtivity</p>
+    <h4 class="govuk-heading-s">Terminally ill</h4>
+    <p>No conditions reported or evidnence available where they are likely to result in death within 6 months</p>
+    <h4 class="govuk-heading-s">Pregnancy risk</h4>
+    <p>No conditions reported or evidnence available</p>
+    <h4 class="govuk-heading-s">Substantial risk to mental or physical health</h4>
+    <p>No conditions reported or evidnence available that suggest there would be a substantial risk to their physical or mental if found capable of work related activity</p>
+    <h4 class="govuk-heading-s">Chemotherapy or radiotherapy</h4>
+    <p>No conditions reported or evidnence available</p>
+
+    <p class="govuk-!-padding-top-6">There are no exceptional circumstances why Boris should be treated as Limitied Capability for Work</p>
+    <h4 class="govuk-heading-s">Regular treatment or receiving certain treatments</h4>
+    <p>No conditions reported or evidnence available</p>
+    <h4 class="govuk-heading-s">Hospital inpatient (includingh attendance at a residential programme/residential rehabilitation for drugs/alcohol)</h4>
+    <p>No conditions reported or evidnence available</p>
+    <h4 class="govuk-heading-s">Cannot work by law because of an infectious disease or contamination</h4>
+    <p>No conditions reported or evidnence available</p>
+    <h4 class="govuk-heading-s">Substantial risk to mental or physial health</h4>
+    <p>No conditions reported or evidnence available that suggest there would be a substantial risk to their physical or mental health if found capable of work related activity</p>
+    <h4 class="govuk-heading-s">Life threatening disease (including uncontrollable/uncontrolled disease/disablemet)</h4>
+    <p>No conditions reported or evidnence available</p>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Recommended review period</h2>
+    <p>I advise that Boris's case needs reviewing in 3 years</p>
+    <h4 class="govuk-heading-s">The reasons for this are:</h4>
+
+    <hr class="bold-hr">
+
+    <h2 class="govuk-heading-m">Declaration</h2>
+    <p>This form has been completed by a healthcare professional approved by the Secretary of State for Work and Pensions</p>
+    <p>I have completed this form in accordance with the current guidance to ESA examining healthcare prefessionals as issued by the Department for Work and Pensions</p>
+    <p>I can confirm that there is no harmful information in the report</p>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h4 class="govuk-heading-s">Healthcare Professional's name</h4>
+        <h4 class="govuk-heading-s">Healthcare Professional's title</h4>
+        <h4 class="govuk-heading-s">Date</h4>
+      </div>
+      <div class="govuk-grid-column-one-thirds">
+        <p>Health practitioner</p>
+        <p>Physiotherapist</p>
+        <p>25 March 2020</p>
+      </div>
+    </div>
+
+</div>{# /govuk-grid-column #}
+</div>{# /govuk-grid-row #}
+
+{% endblock %}
