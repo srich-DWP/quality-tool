@@ -9,31 +9,32 @@
 {% endblock %}
 
 {% block leftPanel %}
-<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
 {% endblock %}
 
 {% block content %}
 <form id="form" method="post" action="audit-list-updated">
 
-    <div class="govuk-width-container govuk-!-margin-top-9">
+    <div class="govuk-!-margin-top-9">
       <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full">
             <div class="govuk-panel govuk-panel--confirmation">
               <h1 class="govuk-panel__title">
-                You have released the assessment report to DWP
+                Release this report to DWP?
               </h1>
-              <!-- <div class="govuk-panel__body">
-                This will be picked up by Decision Makers
+            <!--  <div class="govuk-panel__body">
+                This will be picked up by the Health Care Professional
               </div> -->
             </div>
           </div>
         </div>
         <input type="submit" class="govuk-button" value="Confirm and continue" id="submit">
+
       </main>
     </div>
-
-
+    <a href="javascript:window.history.back()" class="govuk-link">Back to decision</a>
+</form>
 
     <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
